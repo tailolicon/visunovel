@@ -4,7 +4,7 @@ Version: 1 (2026-10-22). Inspired by the **architecture**, not the protected cor
 ## 0. Legal and source gate — FAIL CLOSED
 - Translating a third-party novel for publication is a separate right from reading it; website access, purchase, free preview, scraped chapters, fan-made translation and attribution DO NOT constitute distribution permission.
 - Before a source is consumed as translation input, record owner, explicit translation license/public-domain basis, permitted geography/media, a stable copy of the authorized source, source version/checksum, evidence URL/document and expiration. The legal owner must allow online redistribution of the translated content, not merely private reading.
-- For \`마왕인데 용사가 너무 많음\` the initial status is **PENDING**. Do not download, translate, store, publish, mirror or reproduce its chapters as part of this pipeline until its rights are cleared and documented.
+- For \`마왕인데 용사가 너무 많음\` the **public distribution right is PENDING**. Do not download, mirror or publish complete chapters from external websites. An actual chapter text **supplied by the user** may be transformed into a draft **for private use** in a private repository or local environment; do not assume that authorizes redistributing it. No source text or translated drafts go to the public visuNovel repo, its Pages build or Actions artifacts. The public publication gate remains STOP until separately licensed and documented.
 - Original visuNovel demo copy is owned by the project. Never mislabel the demo as the Korean novel.
 
 ## 1. Canonical files and trust
