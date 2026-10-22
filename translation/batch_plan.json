@@ -65,5 +65,6 @@
   "status_note": "On 2026-10-23 the repository contains context and manga link manifests, but no user-provided source novel chapter text.",
   "private_storage_repo": "tailolicon/Translate",
   "public_planning_repo": "tailolicon/visunovel",
-  "source_visibility_requirement": "private"
+  "source_visibility_requirement": "private",
+  "private_source_branch": "automation/visunovel-private-source"
 }

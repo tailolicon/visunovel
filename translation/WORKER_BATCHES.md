@@ -22,7 +22,8 @@ All future waves advance by 25 chapters. `python3 scripts/batch_queue.py --lane 
 
 - **Public planning, canon and website**: [tailolicon/visunovel](https://github.com/tailolicon/visunovel), branch `main`. Its existing `automation/visunovel-translate-lane-*` branches are **public and MUST NOT hold book source or private drafts**.
 - **Private source and draft storage**: `tailolicon/Translate` (verified **private** on 2026-10-23), in a dedicated `visunovel/` namespace. Existing private repo code on `main` is unrelated and read-only except for future user-provided source deposits. Five workers use only dedicated stable private branches `automation/visunovel-private-lane-N`, not public branch names.
-- Private input example: `tailolicon/Translate`, source ref chosen by user (e.g. private `main`), path `visunovel/source/the-demon-king-overrun/ch-0137.ko.txt`.
+- Private input example: `tailolicon/Translate`, source ref `automation/visunovel-private-source` (user-owned, read-only for workers), path `visunovel/source/the-demon-king-overrun/ch-0137.ko.txt`.
+- Upload source chapter files to [the private source branch](https://github.com/tailolicon/Translate/tree/automation/visunovel-private-source/visunovel/source/the-demon-king-overrun) in the pre-created intake folder. Workers READ ONLY from this source branch, not from the private repo's unrelated `main`.
 - Verify the output repository is still private on every run. If the private repo or required input is missing, report `waiting_source`; never write to public fallback.
 
 ## Chapter source and output boundary
