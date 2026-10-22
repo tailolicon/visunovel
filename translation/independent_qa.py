@@ -61,7 +61,12 @@ def _approved_relation(entry: dict, canon: dict, book_id: str, chapter: int) -> 
             matches[0].get("address_pronoun") == entry.get("address_pronoun"))
 
 
-def _dialogue_audit(manifest: dict, canon: dict, book_id: str, chapter: int, paragraph_count: int) -> tuple[list[str], list[str]]:
+def _contains_pronoun(text: str, pronoun: object) -> bool:
+    return (isinstance(pronoun, str) and bool(pronoun.strip())
+            and bool(re.search(r"(?<!\\w)" + re.escape(pronoun) + r"(?!\\w)", text, re.IGNORECASE)))
+
+
+def _dialogue_audit(manifest: dict, canon: dict, book_id: str, chapter: int, paragraphs: list[str]) -> tuple[list[str], list[str]]:
     blockers: list[str] = []
     warnings: list[str] = []
     rows = manifest.get("dialogue_reviews")
@@ -75,7 +80,7 @@ def _dialogue_audit(manifest: dict, canon: dict, book_id: str, chapter: int, par
             blockers.append("invalid_dialogue_review_schema")
             continue
         index = row.get("paragraph")
-        if type(index) is not int or not 0 <= index < paragraph_count:
+        if type(index) is not int or not 0 <= index < len(paragraphs):
             blockers.append("dialogue_paragraph_out_of_range")
             continue
         pair = (index, row.get("speaker"), row.get("addressee"))
@@ -97,6 +102,12 @@ def _dialogue_audit(manifest: dict, canon: dict, book_id: str, chapter: int, par
             blockers.append("approved_dialogue_lacks_scene_review")
         if not _approved_relation(row, canon, book_id, chapter):
             blockers.append("unverified_directed_pronoun_pair")
+        if row.get("pronoun_omitted") is True:
+            if not row.get("omission_review_id"):
+                blockers.append("pronoun_omission_lacks_review")
+        elif any(not _contains_pronoun(paragraphs[index], row.get(field))
+                 for field in ("self_pronoun", "address_pronoun")):
+            warnings.append("approved_pronoun_not_observed_in_paragraph")
     return blockers, warnings
 
 
@@ -143,7 +154,7 @@ def audit(source: str, draft: str, book_id: str, chapter: int,
             blockers.append("unreviewed_approval_claim")
         if manifest.get("public_release_authorized") is True or manifest.get("draft_only") is False:
             blockers.append("unsafe_publication_flag")
-        a, b = _dialogue_audit(manifest, canon, book_id, chapter, len(translated))
+        a, b = _dialogue_audit(manifest, canon, book_id, chapter, translated)
         blockers.extend(a)
         warnings.extend(b)
 
