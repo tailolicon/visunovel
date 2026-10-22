@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "book_id": "the-demon-king-overrun",
+  "chapter_start": 137,
+  "batch_size": 5,
+  "worker_count": 5,
+  "wave_size": 25,
+  "initial_waves": 2,
+  "schedule_timezone": "Asia/Ho_Chi_Minh",
+  "hourly_minute_offsets": [
+    0,
+    12,
+    24,
+    36,
+    48
+  ],
+  "lanes": [
+    {
+      "id": 1,
+      "branch": "automation/visunovel-translate-lane-1",
+      "folder": "work/private_drafts/lane-1",
+      "first_chapter": 137,
+      "initial_chapter_count": 5
+    },
+    {
+      "id": 2,
+      "branch": "automation/visunovel-translate-lane-2",
+      "folder": "work/private_drafts/lane-2",
+      "first_chapter": 142,
+      "initial_chapter_count": 5
+    },
+    {
+      "id": 3,
+      "branch": "automation/visunovel-translate-lane-3",
+      "folder": "work/private_drafts/lane-3",
+      "first_chapter": 147,
+      "initial_chapter_count": 5
+    },
+    {
+      "id": 4,
+      "branch": "automation/visunovel-translate-lane-4",
+      "folder": "work/private_drafts/lane-4",
+      "first_chapter": 152,
+      "initial_chapter_count": 5
+    },
+    {
+      "id": 5,
+      "branch": "automation/visunovel-translate-lane-5",
+      "folder": "work/private_drafts/lane-5",
+      "first_chapter": 157,
+      "initial_chapter_count": 5
+    }
+  ],
+  "source_requirement": "User-supplied complete chapter text in a private input file. Metadata, links, manhwa image URLs and contextual notes are not a source chapter.",
+  "source_folder": "private/source/the-demon-king-overrun/",
+  "source_filename_pattern": "ch-{chapter:04d}.ko.txt",
+  "source_formats": [
+    "ko.txt"
+  ],
+  "canonical_context_reference": "main:translation/canon.json",
+  "source_of_proposed_context": "main:translation/CONTEXT_MAWANG.md",
+  "allowed_private_draft": "user-provided-text-only",
+  "published_translation_rights": "no-public-release-unless-verified",
+  "workflow_state": "queued_waiting_source",
+  "status_note": "On 2026-10-23 the repository contains context and manga link manifests, but no user-provided source novel chapter text."
+}

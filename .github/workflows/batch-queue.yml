@@ -1,0 +1,27 @@
+name: Private translation batch allocation checks
+on:
+  push:
+    paths:
+      - 'translation/batch_plan.json'
+      - 'translation/WORKER_BATCHES.md'
+      - 'translation/WORKER_START.md'
+      - 'scripts/batch_queue.py'
+      - 'tests/test_batch_queue.py'
+      - '.github/workflows/batch-queue.yml'
+  pull_request:
+    paths:
+      - 'translation/batch_plan.json'
+      - 'translation/WORKER_BATCHES.md'
+      - 'translation/WORKER_START.md'
+      - 'scripts/batch_queue.py'
+      - 'tests/test_batch_queue.py'
+      - '.github/workflows/batch-queue.yml'
+permissions:
+  contents: read
+jobs:
+  allocate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: python3 -m unittest discover -s tests -p 'test_batch_queue.py' -v
+      - run: python3 scripts/batch_queue.py --lane 1 --waves 2
