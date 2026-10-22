@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "work_id": "the-demon-king-overrun",
+  "intake_source": "tailolicon/manga-tl-factory",
+  "intake_type": "kotori_source_handoff_metadata",
+  "upstream_repo": "https://github.com/tailolicon/manga-tl-factory",
+  "upstream_head_when_inspected": "2204be6f5677bd3e0b63a607ace60194a007d795",
+  "upstream_path": "work/imports/s-chu-n-m-c-c-a-ma-v-ng/kotori-9602-mvju70ma/source_handoff.json",
+  "upstream_file": "https://github.com/tailolicon/manga-tl-factory/blob/main/work/imports/s-chu-n-m-c-c-a-ma-v-ng/kotori-9602-mvju70ma/source_handoff.json",
+  "upstream_source": "https://doctruyen3qhub.fit/truyen-tranh/su-chuan-muc-cua-ma-vuong/20622",
+  "scope": {
+    "requested_manhwa_chapters": [
+      1,
+      20
+    ],
+    "available_resolved_chapters": [
+      3
+    ],
+    "missing_requested_chapters": [
+      1,
+      2,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20
+    ]
+  },
+  "chapters": [
+    {
+      "chapter": 3,
+      "source_chapter_id": "3504262",
+      "source_url": "https://doctruyen3qhub.fit/truyen-tranh/su-chuan-muc-cua-ma-vuong/chapter-3/3504262",
+      "resolved_image_url_count": 186,
+      "image_host": "s15.anhvip.xyz",
+      "direct_image_fetch_verified": false,
+      "visual_panel_reviewed_count": 0,
+      "dialogue_pairs_approved": 0
+    }
+  ],
+  "acquisition_workflow_url": "https://github.com/tailolicon/manga-tl-factory/actions/runs/39826220023",
+  "last_checked_at": "2026-10-23",
+  "verification_notes": "A source handoff with 186 image URLs exists; it is not proof that images are downloaded, fetched successfully, or visually inspected. The GitHub Actions acquisition run was in_progress at initial inspection; re-check run artifact to get verified counts.",
+  "editorial_rules": [
+    "Never treat URL resolution as text/visual evidence.",
+    "Compare with user-selected first-20 VN comic edition before accepting pronouns.",
+    "Do not copy manga images to visuNovel repository.",
+    "No canonical name/pronoun promotion without directly verified scene and reviewer evidence."
+  ]
+}
