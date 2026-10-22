@@ -51,6 +51,217 @@
       ],
       "speech_profile": "Điềm tĩnh, quan tâm Ly, cách nói trực tiếp và không cổ phong hóa.",
       "locked": true
+    },
+    {
+      "id": "berze",
+      "book_id": "the-demon-king-overrun",
+      "canonical_name": "Berze Deias",
+      "korean_name": "베르제 데이아스",
+      "aliases": [
+        "Berze",
+        "Ma Vương Hắc Viêm/Nghiệp Hỏa"
+      ],
+      "speech_profile": "Nhân vật chính, Ma Long tộc hắc viêm, thủ khoa trường sĩ quan Ma Vương, hồi quy; kiêu ngạo, thực dụng, coi thường 'Chuẩn mực Ma Vương'. (ứng viên, chưa đối chiếu lời thoại gốc)",
+      "locked": false,
+      "evidence": "namu.wiki: 마왕인데 용사가 너무 많음 §6 (truy cập 2026-10-23)"
+    },
+    {
+      "id": "gordon",
+      "book_id": "the-demon-king-overrun",
+      "canonical_name": "Gordon Dairik",
+      "korean_name": "고든 다이리크",
+      "aliases": [
+        "Gordon"
+      ],
+      "speech_profile": "Phó quan/thư ký của Berze, thủ khoa trường đào tạo ma tộc, kiếm sĩ mạnh; hay than phiền nhưng trung thành. (ứng viên, chưa đối chiếu lời thoại gốc)",
+      "locked": false,
+      "evidence": "namu.wiki: 마왕인데 용사가 너무 많음 §6 (truy cập 2026-10-23)"
+    },
+    {
+      "id": "ernyan",
+      "book_id": "the-demon-king-overrun",
+      "canonical_name": "Ernyan Hilderan",
+      "korean_name": "에르냔 힐데란",
+      "aliases": [
+        "Ernian Hilderan (bản dịch VN)",
+        "Thuật sĩ tinh linh bóng tối"
+      ],
+      "speech_profile": "Đệ nhất công chúa Hilderan, thiên tài tinh linh sư; nữ chính; tự nguyện theo Berze; về sau thành Ma Hoàng phi. (ứng viên, chưa đối chiếu lời thoại gốc)",
+      "locked": false,
+      "evidence": "namu.wiki: 마왕인데 용사가 너무 많음 §6 (truy cập 2026-10-23)"
+    },
+    {
+      "id": "elena",
+      "book_id": "the-demon-king-overrun",
+      "canonical_name": "Elena Hilderan",
+      "korean_name": "엘레나 힐데란",
+      "aliases": [],
+      "speech_profile": "Công chúa thứ 13 Hilderan, em gái được Ernyan cưng nhất; coi Berze như hình bóng người cha. (ứng viên, chưa đối chiếu lời thoại gốc)",
+      "locked": false,
+      "evidence": "namu.wiki: 마왕인데 용사가 너무 많음 §6 (truy cập 2026-10-23)"
+    },
+    {
+      "id": "kaede",
+      "book_id": "the-demon-king-overrun",
+      "canonical_name": "Kaede Jespine",
+      "korean_name": "카에데 제스파인",
+      "aliases": [
+        "Hắc ám kỵ sĩ"
+      ],
+      "speech_profile": "Hoàng nữ thứ 9 đế quốc Jespine, dũng giả tân binh; thề trung thành 5 năm, làm kỵ sĩ của Berze; đệ tử của Gordon; mê sô-cô-la. (ứng viên, chưa đối chiếu lời thoại gốc)",
+      "locked": false,
+      "evidence": "namu.wiki: 마왕인데 용사가 너무 많음 §6 (truy cập 2026-10-23)"
+    },
+    {
+      "id": "louise",
+      "book_id": "the-demon-king-overrun",
+      "canonical_name": "Louise Verft",
+      "korean_name": "루이제 베르프트",
+      "aliases": [
+        "Người khổng lồ địa ngục"
+      ],
+      "speech_profile": "Công chúa vương quốc người lùn, cuồng luyện cơ; từng là chủ nô của Logar. (ứng viên, chưa đối chiếu lời thoại gốc)",
+      "locked": false,
+      "evidence": "namu.wiki: 마왕인데 용사가 너무 많음 §6 (truy cập 2026-10-23)"
+    },
+    {
+      "id": "lavinia",
+      "book_id": "the-demon-king-overrun",
+      "canonical_name": "Lavinia Akan",
+      "korean_name": "라비니아 아칸",
+      "aliases": [
+        "Quân đoàn trưởng tử thần"
+      ],
+      "speech_profile": "Công chúa thứ 3 vương quốc Akan, nhà nghiên cứu chimera lập dị; nói câu cực ngắn. (ứng viên, chưa đối chiếu lời thoại gốc)",
+      "locked": false,
+      "evidence": "namu.wiki: 마왕인데 용사가 너무 많음 §6 (truy cập 2026-10-23)"
+    },
+    {
+      "id": "logar",
+      "book_id": "the-demon-king-overrun",
+      "canonical_name": "Logar/Logger Friedri",
+      "korean_name": "로거 프리드리",
+      "aliases": [
+        "Roger (bản dịch VN, chưa thống nhất)"
+      ],
+      "speech_profile": "Thợ rèn người lùn kiêm dũng giả yếu; kiến trúc sư tháp di động/Thiên Không Tháp. (ứng viên, chưa đối chiếu lời thoại gốc)",
+      "locked": false,
+      "evidence": "namu.wiki: 마왕인데 용사가 너무 많음 §6 (truy cập 2026-10-23)"
+    },
+    {
+      "id": "hillen",
+      "book_id": "the-demon-king-overrun",
+      "canonical_name": "Hillen Cargill",
+      "korean_name": "힐런 카길",
+      "aliases": [
+        "Hillan (bản dịch VN)"
+      ],
+      "speech_profile": "Dũng giả Hilderan, giỏi chính trị, hai mặt; trở thành 'con ngựa thành Troy' của Berze; cuối truyện thành đôi với Rozel. (ứng viên, chưa đối chiếu lời thoại gốc)",
+      "locked": false,
+      "evidence": "namu.wiki: 마왕인데 용사가 너무 많음 §6 (truy cập 2026-10-23)"
+    },
+    {
+      "id": "rozel",
+      "book_id": "the-demon-king-overrun",
+      "canonical_name": "Rozel Charnt",
+      "korean_name": "로젤 차른트",
+      "aliases": [],
+      "speech_profile": "Đại pháp sư lửa của Akan, thân với Lavinia, khinh Hillen lúc đầu. (ứng viên, chưa đối chiếu lời thoại gốc)",
+      "locked": false,
+      "evidence": "namu.wiki: 마왕인데 용사가 너무 많음 §6 (truy cập 2026-10-23)"
+    },
+    {
+      "id": "granada",
+      "book_id": "the-demon-king-overrun",
+      "canonical_name": "Granada",
+      "korean_name": "그라나다",
+      "aliases": [],
+      "speech_profile": "Nữ elf tộc Phong, nô lệ được Berze mua làm gián điệp; khế ước 100 năm. (ứng viên, chưa đối chiếu lời thoại gốc)",
+      "locked": false,
+      "evidence": "namu.wiki: 마왕인데 용사가 너무 많음 §6 (truy cập 2026-10-23)"
+    },
+    {
+      "id": "jason",
+      "book_id": "the-demon-king-overrun",
+      "canonical_name": "Jason Cokmundo",
+      "korean_name": "제이슨 코크문도",
+      "aliases": [
+        "Ma Vương Dối Trá",
+        "Jetson (bản dịch VN, có thể lỗi)"
+      ],
+      "speech_profile": "Ma Vương lâu năm nhất Arein; thực chất là hậu duệ doppelganger — phản diện chính (spoiler). (ứng viên, chưa đối chiếu lời thoại gốc)",
+      "locked": false,
+      "evidence": "namu.wiki: 마왕인데 용사가 너무 많음 §6 (truy cập 2026-10-23)"
+    },
+    {
+      "id": "draxon",
+      "book_id": "the-demon-king-overrun",
+      "canonical_name": "Draxon Doldorf",
+      "korean_name": "드락슨 돌도프",
+      "aliases": [],
+      "speech_profile": "Chủ Tháp Dã Thú, đàn anh (선배) của Berze, sống 70 năm ở Arein. (ứng viên, chưa đối chiếu lời thoại gốc)",
+      "locked": false,
+      "evidence": "namu.wiki: 마왕인데 용사가 너무 많음 §6 (truy cập 2026-10-23)"
+    },
+    {
+      "id": "reina",
+      "book_id": "the-demon-king-overrun",
+      "canonical_name": "Reina Sordein",
+      "korean_name": "레이나 소르데인",
+      "aliases": [],
+      "speech_profile": "Chủ Tháp Băng Giá, Ma Vương sương giá 100 năm; thiện cảm với Berze, về sau thành quyến thuộc. (ứng viên, chưa đối chiếu lời thoại gốc)",
+      "locked": false,
+      "evidence": "namu.wiki: 마왕인데 용사가 너무 많음 §6 (truy cập 2026-10-23)"
+    },
+    {
+      "id": "vivian",
+      "book_id": "the-demon-king-overrun",
+      "canonical_name": "Vivian Blunt",
+      "korean_name": "비비안 블런트",
+      "aliases": [],
+      "speech_profile": "Ma Vương mới, succubus; bị lừa đến Arein; thành quyến thuộc của Berze, hay cãi với Reina. (ứng viên, chưa đối chiếu lời thoại gốc)",
+      "locked": false,
+      "evidence": "namu.wiki: 마왕인데 용사가 너무 많음 §6 (truy cập 2026-10-23)"
+    },
+    {
+      "id": "ugar",
+      "book_id": "the-demon-king-overrun",
+      "canonical_name": "Ugar Belbek",
+      "korean_name": "우가르 벨베크",
+      "aliases": [],
+      "speech_profile": "Chủ Tháp Kim Cương, titan, đầu óc đơn giản. (ứng viên, chưa đối chiếu lời thoại gốc)",
+      "locked": false,
+      "evidence": "namu.wiki: 마왕인데 용사가 너무 많음 §6 (truy cập 2026-10-23)"
+    },
+    {
+      "id": "valaf",
+      "book_id": "the-demon-king-overrun",
+      "canonical_name": "Valaf Disrod",
+      "korean_name": "발라프 디스로드",
+      "aliases": [],
+      "speech_profile": "Dũng giả mạnh nhất Arein (spoiler: = Daniel Deirus, kẻ giết Berze ở chương 1). (ứng viên, chưa đối chiếu lời thoại gốc)",
+      "locked": false,
+      "evidence": "namu.wiki: 마왕인데 용사가 너무 많음 §6 (truy cập 2026-10-23)"
+    },
+    {
+      "id": "nairuniel",
+      "book_id": "the-demon-king-overrun",
+      "canonical_name": "Nairuniel",
+      "korean_name": "나이루니엘",
+      "aliases": [],
+      "speech_profile": "Tinh linh nước cấp cao đầu tiên khế ước với Ernyan; hay hoang tưởng chuyện tình cảm. (ứng viên, chưa đối chiếu lời thoại gốc)",
+      "locked": false,
+      "evidence": "namu.wiki: 마왕인데 용사가 너무 많음 §6 (truy cập 2026-10-23)"
+    },
+    {
+      "id": "alkain",
+      "book_id": "the-demon-king-overrun",
+      "canonical_name": "Alkain Blamif",
+      "korean_name": "알카인 블라미프",
+      "aliases": [],
+      "speech_profile": "Đại công ma giới, cấp trên của các Ma Vương. (ứng viên, chưa đối chiếu lời thoại gốc)",
+      "locked": false,
+      "evidence": "namu.wiki: 마왕인데 용사가 너무 많음 §6 (truy cập 2026-10-23)"
     }
   ],
   "relationships": [
@@ -85,7 +296,188 @@
   ],
   "terms": [],
   "term_review_queue": [],
-  "relationship_review_queue": [],
+  "relationship_review_queue": [
+    {
+      "id": "gordon-to-berze-early",
+      "book_id": "the-demon-king-overrun",
+      "speaker": "gordon",
+      "addressee": "berze",
+      "phase": "early",
+      "proposed_self_pronoun": "tôi",
+      "proposed_address_pronoun": "ngài",
+      "korean_signal": "마왕님 + 존댓말 (dự đoán theo vai phó quan)",
+      "status": "needs_scene_evidence",
+      "source": "translation/CONTEXT_MAWANG.md"
+    },
+    {
+      "id": "berze-to-gordon-early",
+      "book_id": "the-demon-king-overrun",
+      "speaker": "berze",
+      "addressee": "gordon",
+      "phase": "early",
+      "proposed_self_pronoun": "ta",
+      "proposed_address_pronoun": "ngươi",
+      "korean_signal": "반말 (dự đoán)",
+      "status": "needs_scene_evidence",
+      "source": "translation/CONTEXT_MAWANG.md"
+    },
+    {
+      "id": "berze-to-ernyan-captive",
+      "book_id": "the-demon-king-overrun",
+      "speaker": "berze",
+      "addressee": "ernyan",
+      "phase": "captive",
+      "proposed_self_pronoun": "ta",
+      "proposed_address_pronoun": "cô",
+      "korean_signal": "반말; tiêu đề hako ch.27 'Tại sao cô lại làm thế với ta?'",
+      "status": "needs_scene_evidence",
+      "source": "translation/CONTEXT_MAWANG.md"
+    },
+    {
+      "id": "ernyan-to-berze-captive",
+      "book_id": "the-demon-king-overrun",
+      "speaker": "ernyan",
+      "addressee": "berze",
+      "phase": "captive",
+      "proposed_self_pronoun": "tôi",
+      "proposed_address_pronoun": "ngài",
+      "korean_signal": "존댓말 + 마왕님? — chưa xác minh; giọng trêu chọc",
+      "status": "needs_scene_evidence",
+      "source": "translation/CONTEXT_MAWANG.md"
+    },
+    {
+      "id": "ernyan-to-berze-late_lovers",
+      "book_id": "the-demon-king-overrun",
+      "speaker": "ernyan",
+      "addressee": "berze",
+      "phase": "late_lovers",
+      "proposed_self_pronoun": "em",
+      "proposed_address_pronoun": "anh",
+      "korean_signal": "CHỈ đề xuất cho giai đoạn đã thành vợ chồng; cần cảnh gốc",
+      "status": "needs_scene_evidence",
+      "source": "translation/CONTEXT_MAWANG.md"
+    },
+    {
+      "id": "elena-to-ernyan-sisters",
+      "book_id": "the-demon-king-overrun",
+      "speaker": "elena",
+      "addressee": "ernyan",
+      "phase": "sisters",
+      "proposed_self_pronoun": "em",
+      "proposed_address_pronoun": "chị",
+      "korean_signal": "언니",
+      "status": "needs_scene_evidence",
+      "source": "translation/CONTEXT_MAWANG.md"
+    },
+    {
+      "id": "ernyan-to-elena-sisters",
+      "book_id": "the-demon-king-overrun",
+      "speaker": "ernyan",
+      "addressee": "elena",
+      "phase": "sisters",
+      "proposed_self_pronoun": "chị",
+      "proposed_address_pronoun": "em",
+      "korean_signal": "반말",
+      "status": "needs_scene_evidence",
+      "source": "translation/CONTEXT_MAWANG.md"
+    },
+    {
+      "id": "elena-to-berze-any",
+      "book_id": "the-demon-king-overrun",
+      "speaker": "elena",
+      "addressee": "berze",
+      "phase": "any",
+      "proposed_self_pronoun": "em/cháu",
+      "proposed_address_pronoun": "ngài",
+      "korean_signal": "존댓말; coi như cha — cần cảnh gốc",
+      "status": "needs_scene_evidence",
+      "source": "translation/CONTEXT_MAWANG.md"
+    },
+    {
+      "id": "kaede-to-gordon-disciple",
+      "book_id": "the-demon-king-overrun",
+      "speaker": "kaede",
+      "addressee": "gordon",
+      "phase": "disciple",
+      "proposed_self_pronoun": "con/em",
+      "proposed_address_pronoun": "thầy",
+      "korean_signal": "스승님? — chưa xác minh",
+      "status": "needs_scene_evidence",
+      "source": "translation/CONTEXT_MAWANG.md"
+    },
+    {
+      "id": "kaede-to-berze-knight",
+      "book_id": "the-demon-king-overrun",
+      "speaker": "kaede",
+      "addressee": "berze",
+      "phase": "knight",
+      "proposed_self_pronoun": "thần/tôi",
+      "proposed_address_pronoun": "bệ hạ/chúa công",
+      "korean_signal": "주군 — chưa xác minh",
+      "status": "needs_scene_evidence",
+      "source": "translation/CONTEXT_MAWANG.md"
+    },
+    {
+      "id": "berze-to-draxon-first_meeting",
+      "book_id": "the-demon-king-overrun",
+      "speaker": "berze",
+      "addressee": "draxon",
+      "phase": "first_meeting",
+      "proposed_self_pronoun": "ta",
+      "proposed_address_pronoun": "ngươi",
+      "korean_signal": "Berze bất kính với 선배",
+      "status": "needs_scene_evidence",
+      "source": "translation/CONTEXT_MAWANG.md"
+    },
+    {
+      "id": "draxon-to-berze-first_meeting",
+      "book_id": "the-demon-king-overrun",
+      "speaker": "draxon",
+      "addressee": "berze",
+      "phase": "first_meeting",
+      "proposed_self_pronoun": "ta",
+      "proposed_address_pronoun": "ngươi/hậu bối",
+      "korean_signal": "후배 취급",
+      "status": "needs_scene_evidence",
+      "source": "translation/CONTEXT_MAWANG.md"
+    },
+    {
+      "id": "granada-to-berze-contract",
+      "book_id": "the-demon-king-overrun",
+      "speaker": "granada",
+      "addressee": "berze",
+      "phase": "contract",
+      "proposed_self_pronoun": "tôi",
+      "proposed_address_pronoun": "ngài",
+      "korean_signal": "존댓말 (dự đoán)",
+      "status": "needs_scene_evidence",
+      "source": "translation/CONTEXT_MAWANG.md"
+    },
+    {
+      "id": "logar-to-berze-captive",
+      "book_id": "the-demon-king-overrun",
+      "speaker": "logar",
+      "addressee": "berze",
+      "phase": "captive",
+      "proposed_self_pronoun": "tôi",
+      "proposed_address_pronoun": "ngài/ma vương",
+      "korean_signal": "chưa xác minh",
+      "status": "needs_scene_evidence",
+      "source": "translation/CONTEXT_MAWANG.md"
+    },
+    {
+      "id": "lavinia-to-berze-guest",
+      "book_id": "the-demon-king-overrun",
+      "speaker": "lavinia",
+      "addressee": "berze",
+      "phase": "guest",
+      "proposed_self_pronoun": "tôi",
+      "proposed_address_pronoun": "anh/ngươi?",
+      "korean_signal": "câu cực ngắn, có thể bỏ đại từ",
+      "status": "needs_scene_evidence",
+      "source": "translation/CONTEXT_MAWANG.md"
+    }
+  ],
   "policy": {
     "unknown_speaker": "defer",
     "unknown_addressee": "defer",
