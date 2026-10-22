@@ -4,6 +4,7 @@ on:
     branches: [main]
     paths:
       - 'index.html'
+      - 'personal.html'
       - 'assets/**'
       - 'data/**'
       - 'translation/canon.json'
@@ -25,11 +26,17 @@ jobs:
       - uses: actions/checkout@v4
       - name: Validate editorial/legal publication gate
         run: python3 scripts/check.py
+      - name: Assemble public-only files
+        run: |
+          mkdir -p public-build
+          cp index.html personal.html public-build/
+          cp -R assets data public-build/
+          touch public-build/.nojekyll
       - name: Configure Pages
         uses: actions/configure-pages@v5
       - name: Upload static site
         uses: actions/upload-pages-artifact@v4
         with:
-          path: .
+          path: public-build
       - name: Deploy
         uses: actions/deploy-pages@v4
