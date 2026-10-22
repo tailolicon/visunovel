@@ -1,0 +1,43 @@
+{
+  "bookId": "nhung-la-thu-binh-minh",
+  "chapter": 2,
+  "title": "Tiếng chuông lúc rạng đông",
+  "qa_status": "passed",
+  "source_type": "original",
+  "editorial_revision": 1,
+  "rights_status": "cleared",
+  "scene": "bell-tower",
+  "time_phase": "acquaintances",
+  "paragraphs": [
+    "Đêm xuống, cả thị trấn sáng lên bằng những cửa sổ màu mật ong. Ly đi theo Châu qua quảng trường lát đá. Không có tiếng xe. Không có tiếng chó sủa. Chỉ có âm thanh của mưa đêm chạm vào mái hiên.",
+    "Chiếc tháp chuông trông cao hơn từ dưới chân. Trên bậc cửa đầu tiên, Ly nhìn thấy một hàng chữ nhỏ được khắc bằng nét tay run rẩy: THỜI GIAN KHÔNG ĐỢI NGƯỜI, NHƯNG CÓ THỂ ĐỢI MỘT LỜI XIN LỖI.",
+    "“Chị có biết ai viết câu này không?” Ly hỏi, ngón tay lướt trên vết khắc. “Em cảm thấy mình từng nhìn thấy nét chữ ấy.”",
+    "Châu không trả lời ngay. Chị rút từ túi áo ra một chiếc chìa khóa bạc. Ánh kim loại phản chiếu lên bậc thềm như một vệt trăng.",
+    "“Chị biết người đã viết nó.” Châu đặt chìa khóa vào tay Ly. “Nhưng chị nghĩ em nên tự nhớ ra.”",
+    "Bên trên đầu họ, kim phút lại dịch chuyển. Một âm thanh rất khẽ vang lên, không hẳn là tiếng chuông, mà giống như ai đó vừa gõ một lần lên thành ly thủy tinh.",
+    "Ly siết chiếc chìa khóa trong lòng bàn tay. Phong thư trong túi áo giờ đây nhẹ hơn, như thể bên trong đã có thứ gì đó biến mất.",
+    "Bình minh còn ở rất xa. Vậy mà từ đầu con phố, một dải sáng mảnh đã bắt đầu bò qua vỉa hè."
+  ],
+  "dialogues": [
+    {
+      "paragraph": 2,
+      "speaker": "ly",
+      "addressee": "chau",
+      "phase": "acquaintances",
+      "self_pronoun": "em",
+      "address_pronoun": "chị",
+      "review_status": "approved",
+      "evidence": "Follows the chapter 1 speaker/addressee relationship with no stage change."
+    },
+    {
+      "paragraph": 4,
+      "speaker": "chau",
+      "addressee": "ly",
+      "phase": "acquaintances",
+      "self_pronoun": "chị",
+      "address_pronoun": "em",
+      "review_status": "approved",
+      "evidence": "Follows the chapter 1 speaker/addressee relationship with no stage change."
+    }
+  ]
+}

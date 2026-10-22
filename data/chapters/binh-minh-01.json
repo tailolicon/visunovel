@@ -1,0 +1,43 @@
+{
+  "bookId": "nhung-la-thu-binh-minh",
+  "chapter": 1,
+  "title": "Cánh cửa không có bóng",
+  "qa_status": "passed",
+  "source_type": "original",
+  "editorial_revision": 1,
+  "rights_status": "cleared",
+  "scene": "old-post-office",
+  "time_phase": "acquaintances",
+  "paragraphs": [
+    "Thị trấn Bạch Miên đã thôi đếm ngày kể từ khi chiếc đồng hồ trên tháp chuông đứng lại ở bốn giờ mười bảy phút. Người ta vẫn mở cửa hàng vào buổi sáng, vẫn đóng then cài cửa khi trời tối, nhưng chẳng ai biết buổi sáng ấy thuộc về thứ mấy.",
+    "Ly đến bưu điện cũ trong một chiều mưa bụi. Trên cánh cửa gỗ xanh có treo tấm biển: CHỈ MỞ CỬA CHO NGƯỜI NHẬN THƯ. Điều kỳ lạ là chiếc biển mới tinh, dù bưu điện đã đóng cửa gần hai mươi năm.",
+    "Bên trong, những ngăn tủ kéo dài đến tận bóng tối. Mỗi ngăn đặt một phong thư niêm kín bằng sáp màu hổ phách. Giữa căn phòng, một người phụ nữ đang ngồi dưới ngọn đèn vàng, cẩn thận lau bụi trên chiếc cân đồng.",
+    "“Chị Châu, em nhận được bức thư này sáng nay.” Ly lấy từ túi áo ra một phong bì không ghi người gửi. “Nhưng trên đó lại đề ngày mai.”",
+    "Châu đặt chiếc khăn xuống. Trong một thoáng, nét mặt chị lộ vẻ nhẹ nhõm đến khó hiểu.",
+    "“Chị đã chờ em.” Châu nhìn ra phía cửa kính đẫm nước. “Đừng mở nó ở đây. Có những lá thư chỉ được đọc khi chuông đồng hồ bắt đầu chạy lại.”",
+    "Ly nhìn phong bì. Trên mặt giấy, con dấu sáp hình một mặt trời bé nhỏ bỗng trở nên ấm nóng.",
+    "Ở ngoài phố, không một ai nhận ra kim phút trên tháp chuông vừa nhích lên một nấc."
+  ],
+  "dialogues": [
+    {
+      "paragraph": 3,
+      "speaker": "ly",
+      "addressee": "chau",
+      "phase": "acquaintances",
+      "self_pronoun": "em",
+      "address_pronoun": "chị",
+      "review_status": "approved",
+      "evidence": "Character introductions and explicit opening dialogue in this scene."
+    },
+    {
+      "paragraph": 5,
+      "speaker": "chau",
+      "addressee": "ly",
+      "phase": "acquaintances",
+      "self_pronoun": "chị",
+      "address_pronoun": "em",
+      "review_status": "approved",
+      "evidence": "Châu speaks to Ly after introduction; scene tone remains protective."
+    }
+  ]
+}

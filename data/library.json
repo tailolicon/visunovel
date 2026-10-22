@@ -1,0 +1,59 @@
+{
+  "version": 1,
+  "updated_at": "2026-10-22",
+  "books": [
+    {
+      "id": "the-demon-king-overrun",
+      "title": "The Demon King Overrun by Heroes",
+      "originalTitle": "마왕인데 용사가 너무 많음",
+      "author": "미립 (Mirip)",
+      "genres": [
+        "Fantasy",
+        "Hàn Quốc"
+      ],
+      "summary": "Một Ma Vương với số lượng dũng sĩ ghé thăm vượt ngoài dự tính. Dự án chuyển ngữ đang chờ xác minh quyền sử dụng.",
+      "description": "Tác phẩm web novel Hàn Quốc. visuNovel hiện chỉ giới thiệu thông tin thư mục và liên kết đến trang xuất bản gốc, không lưu trữ các chương nguyên tác hoặc bản dịch chưa được cho phép.",
+      "status": "pending",
+      "rights_status": "pending",
+      "rights_type": "third_party",
+      "rights_owner": "Chủ sở hữu quyền tác phẩm",
+      "rights_evidence": "",
+      "sourceUrl": "https://m.munpia.com/novel/detail/257796",
+      "coverA": "#654c5d",
+      "coverB": "#171e30",
+      "symbol": "魔",
+      "chapters": []
+    },
+    {
+      "id": "nhung-la-thu-binh-minh",
+      "title": "Những Lá Thư Của Bình Minh",
+      "originalTitle": "",
+      "author": "visuNovel Original",
+      "genres": [
+        "Giả tưởng",
+        "Bí ẩn"
+      ],
+      "summary": "Ở thị trấn nơi đồng hồ ngừng chạy, những lá thư chưa từng được gửi bắt đầu tìm về người nhận.",
+      "description": "Truyện ngắn nguyên bản được sáng tác riêng để thử nghiệm trình đọc, nhịp văn và quy tắc xưng hô của visuNovel. Không liên quan đến bộ tiểu thuyết Hàn Quốc.",
+      "status": "available",
+      "rights_status": "cleared",
+      "rights_type": "original",
+      "rights_owner": "visuNovel",
+      "rights_evidence": "Original short fiction authored specifically for the visuNovel product demo on 2026-10-22.",
+      "sourceUrl": "",
+      "coverA": "#516478",
+      "coverB": "#26243a",
+      "symbol": "✶",
+      "chapters": [
+        {
+          "title": "Chương 1 — Cánh cửa không có bóng",
+          "path": "data/chapters/binh-minh-01.json"
+        },
+        {
+          "title": "Chương 2 — Tiếng chuông lúc rạng đông",
+          "path": "data/chapters/binh-minh-02.json"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,98 @@
+{
+  "schema_version": 1,
+  "work_id": "visunovel",
+  "source_of_truth": "repository/main",
+  "priority": [
+    "source_scene_evidence",
+    "locked_relation_phase",
+    "locked_terms",
+    "style_rules"
+  ],
+  "works": [
+    {
+      "book_id": "the-demon-king-overrun",
+      "source_language": "ko",
+      "original_title": "마왕인데 용사가 너무 많음",
+      "source_url": "https://m.munpia.com/novel/detail/257796",
+      "source_snapshot_sha256": null,
+      "source_pin": null,
+      "rights_status": "pending",
+      "rights_evidence": "",
+      "allowed_to_translate": false,
+      "allowed_to_publish": false
+    },
+    {
+      "book_id": "nhung-la-thu-binh-minh",
+      "source_language": "vi",
+      "original_title": "Những Lá Thư Của Bình Minh",
+      "source_snapshot_sha256": null,
+      "source_pin": "original-demo-2026-10-22",
+      "rights_status": "cleared",
+      "rights_evidence": "VisuNovel authored original demo content",
+      "allowed_to_translate": true,
+      "allowed_to_publish": true
+    }
+  ],
+  "characters": [
+    {
+      "id": "ly",
+      "book_id": "nhung-la-thu-binh-minh",
+      "canonical_name": "Ly",
+      "aliases": [],
+      "speech_profile": "Trẻ, chú ý quan sát, biết kính trọng người lớn tuổi; chỉ áp dụng khi có chứng cứ trong cảnh.",
+      "locked": true
+    },
+    {
+      "id": "chau",
+      "book_id": "nhung-la-thu-binh-minh",
+      "canonical_name": "Châu",
+      "aliases": [
+        "chị Châu"
+      ],
+      "speech_profile": "Điềm tĩnh, quan tâm Ly, cách nói trực tiếp và không cổ phong hóa.",
+      "locked": true
+    }
+  ],
+  "relationships": [
+    {
+      "id": "ly-to-chau-early",
+      "book_id": "nhung-la-thu-binh-minh",
+      "speaker": "ly",
+      "addressee": "chau",
+      "phase": "acquaintances",
+      "valid_from_chapter": 1,
+      "valid_to_chapter": null,
+      "self_pronoun": "em",
+      "address_pronoun": "chị",
+      "locked": true,
+      "evidence": "Original author intent, dialogue of chapter 1.",
+      "reviewed_by": "editorial-seed"
+    },
+    {
+      "id": "chau-to-ly-early",
+      "book_id": "nhung-la-thu-binh-minh",
+      "speaker": "chau",
+      "addressee": "ly",
+      "phase": "acquaintances",
+      "valid_from_chapter": 1,
+      "valid_to_chapter": null,
+      "self_pronoun": "chị",
+      "address_pronoun": "em",
+      "locked": true,
+      "evidence": "Original author intent, dialogue of chapter 1.",
+      "reviewed_by": "editorial-seed"
+    }
+  ],
+  "terms": [],
+  "term_review_queue": [],
+  "relationship_review_queue": [],
+  "policy": {
+    "unknown_speaker": "defer",
+    "unknown_addressee": "defer",
+    "unresolved_relation": "defer",
+    "unapproved_phase_change": "block",
+    "unreviewed_alias": "do_not_promote",
+    "override_rule": "requires_scene_quote_and_review_id",
+    "dialogue_annotations_required": true
+  }
+}
