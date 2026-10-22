@@ -1,0 +1,36 @@
+name: Independent private draft QA
+on:
+  push:
+    paths:
+      - 'translation/independent_qa.py'
+      - 'translation/INDEPENDENT_QA.md'
+      - 'tests/test_independent_qa.py'
+      - '.github/workflows/independent-qa.yml'
+      - 'translation/context_lint.py'
+      - 'translation/evidence_lint.py'
+      - 'translation/edition_provenance_lint.py'
+      - 'translation/canon.json'
+  pull_request:
+    paths:
+      - 'translation/independent_qa.py'
+      - 'translation/INDEPENDENT_QA.md'
+      - 'tests/test_independent_qa.py'
+      - '.github/workflows/independent-qa.yml'
+      - 'translation/context_lint.py'
+      - 'translation/evidence_lint.py'
+      - 'translation/edition_provenance_lint.py'
+      - 'translation/canon.json'
+permissions:
+  contents: read
+jobs:
+  private-qa:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Independent QA synthetic tests
+        run: python3 -m unittest discover -s tests -p 'test_independent_qa.py' -v
+      - name: Context and evidence read-only gates
+        run: |
+          python3 translation/evidence_lint.py
+          python3 translation/edition_provenance_lint.py
+          python3 translation/context_lint.py
