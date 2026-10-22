@@ -1,0 +1,11 @@
+# Personal reading/translation files and keys must never be published
+.env
+.env.*
+!.env.example
+private/
+input/
+drafts/
+outputs/
+*.personal.txt
+*.private.md
+__pycache__/

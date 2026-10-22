@@ -1,0 +1,52 @@
+{
+  "schema_version": 1,
+  "updated_at": "2026-10-22",
+  "mode": "personal_reading_priority",
+  "book_id": "the-demon-king-overrun",
+  "priority_arc": {
+    "name_vi": "Tấn công Tháp Ma Vương — kế hoạch tháp di động",
+    "first_novel_chapter": 137,
+    "start_confidence": "verified",
+    "end_novel_chapter": null,
+    "end_confidence": "not_verified",
+    "story_beats": [
+      {
+        "chapter": 137,
+        "event": "Berze công bố ý tưởng khiến tháp di chuyển",
+        "status": "located",
+        "source_url": "https://www.beastnovels.com/series/the-demon-king-overrun-by-heroes/137"
+      },
+      {
+        "chapter": 138,
+        "event": "Logar thảo luận tính khả thi và nguồn năng lượng",
+        "status": "located",
+        "source_url": "https://www.beastnovels.com/series/the-demon-king-overrun-by-heroes/138"
+      },
+      {
+        "chapter": 141,
+        "event": "Đội tấn công Hilderan đến tháp, giải cứu công chúa",
+        "status": "located",
+        "source_url": "https://www.beastnovels.com/series/the-demon-king-overrun-by-heroes/141"
+      },
+      {
+        "chapter": 142,
+        "event": "Bản thiết kế tám chân di chuyển",
+        "status": "located",
+        "source_url": "https://www.beastnovels.com/series/the-demon-king-overrun-by-heroes/142"
+      },
+      {
+        "chapter": 150,
+        "event": "Các thợ lùn được huy động; tháp hợp nhất và gia cường",
+        "status": "located",
+        "source_url": "https://www.beastnovels.com/series/the-demon-king-overrun-by-heroes/150"
+      }
+    ]
+  },
+  "order": "ascending_from_137",
+  "defer_chapters_before": 137,
+  "source_import": "user_supplied_text_only",
+  "public_chapter_publication": "blocked_until_distribution_license",
+  "private_local_translation": "tool_supported_on_user_provided_input",
+  "current_private_chapter_status": "awaiting_user_supplied_source",
+  "notes": "Nguồn trang web tiếng Anh là tài liệu định vị chương, không phải giấy phép phân phối hay kho văn bản nhập tự động. Không tự dịch/chép nguyên chương từ trang bên thứ ba vào output của tác vụ."
+}
