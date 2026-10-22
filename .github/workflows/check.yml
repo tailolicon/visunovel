@@ -1,0 +1,13 @@
+name: Editorial and rights checks
+on:
+  push:
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate publish catalog and pronoun canon
+        run: python3 scripts/check.py
