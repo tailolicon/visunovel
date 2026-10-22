@@ -54,9 +54,10 @@
       },
       {
         "chapter": 156,
-        "event": "Tên chương The Tower's Whereabouts, có thể là hậu quả tháp đổi vị trí",
-        "status": "title_only",
-        "source_url": "https://asurascans.com/novels/the-demon-king-overrun-by-heroes"
+        "event": "Tháp đứng lên, bước thử bằng chân cơ khí và rời vị trí cũ",
+        "status": "scene_confirmed_secondary_translation",
+        "source_url": "https://ranovel.com/novel/im-the-demon-king-but-there-are-too-many-heroes/chapter-156/",
+        "evidence_type": "secondary_indexed_scene"
       },
       {
         "chapter": 160,
@@ -67,9 +68,12 @@
     ],
     "completion_candidate_novel_chapter": 154,
     "completion_candidate_confidence": "tentative_indexed_excerpt",
-    "first_movement_candidate_novel_chapter": 155,
-    "first_movement_confidence": "unverified",
-    "confirmed_mobile_by_novel_chapter": 160
+    "first_movement_candidate_novel_chapter": null,
+    "first_movement_confidence": "secondary_text_explicit",
+    "confirmed_mobile_by_novel_chapter": 156,
+    "first_movement_confirmed_novel_chapter": 156,
+    "first_movement_evidence_type": "secondary_indexed_scene",
+    "first_movement_source_url": "https://ranovel.com/novel/im-the-demon-king-but-there-are-too-many-heroes/chapter-156/"
   },
   "order": "ascending_from_137",
   "defer_chapters_before": 137,
@@ -77,6 +81,6 @@
   "public_chapter_publication": "blocked_until_distribution_license",
   "private_local_translation": "tool_supported_on_user_provided_input",
   "current_private_chapter_status": "awaiting_user_supplied_source",
-  "notes": "Các mốc 154-156 chỉ là ứng viên, chưa xác minh chương đầu tiên tháp di chuyển. Chương 160 là bằng chứng hồi cố. Không sao chép nội dung chương hoặc coi website thứ ba là giấy phép dịch/đăng.",
+  "notes": "Cảnh tháp bước đi lần đầu được định vị tại novel chương 156 theo bản dịch thứ cấp; chưa đối chiếu bản Hàn. Mốc hoàn tất chế tạo ở chương 154 vẫn chưa được xác minh. Không đồng nhất bước đi đầu tiên với kết thúc arc. Không sao chép văn bản chương.",
   "source_discovery_policy": "metadata_only_no_full_chapter_fetch"
 }
