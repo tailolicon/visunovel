@@ -1,0 +1,41 @@
+name: Character canon and context integrity
+on:
+  push:
+    paths:
+      - 'translation/canon.json'
+      - 'translation/world_bible.json'
+      - 'translation/evidence_01_20.json'
+      - 'translation/evidence_lint.py'
+      - 'tests/test_evidence_lint.py'
+      - 'translation/context_lint.py'
+      - 'data/chapters/**'
+      - 'data/library.json'
+      - 'tests/test_context_lint.py'
+      - '.github/workflows/context.yml'
+  pull_request:
+    paths:
+      - 'translation/canon.json'
+      - 'translation/world_bible.json'
+      - 'translation/evidence_01_20.json'
+      - 'translation/evidence_lint.py'
+      - 'tests/test_evidence_lint.py'
+      - 'translation/context_lint.py'
+      - 'data/chapters/**'
+      - 'data/library.json'
+      - 'tests/test_context_lint.py'
+      - '.github/workflows/context.yml'
+permissions:
+  contents: read
+jobs:
+  canon:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check identity, address and world bible
+        run: python3 translation/context_lint.py
+      - name: Inspect 1–20 evidence ledger (must remain unapproved)
+        run: python3 translation/evidence_lint.py
+      - name: Regression tests for evidence bounds
+        run: python3 -m unittest discover -s tests -p 'test_evidence_lint.py' -v
+      - name: Regression tests for directed relations and phase changes
+        run: python3 -m unittest discover -s tests -p 'test_context_lint.py' -v

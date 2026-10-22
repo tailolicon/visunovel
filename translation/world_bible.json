@@ -1,0 +1,106 @@
+{
+  "schema_version": 1,
+  "policy": {
+    "source_of_truth": "source-scene-evidence-only",
+    "unverified_is_unknown": true,
+    "candidate_facts_never_locked": true,
+    "knowledge_is_time_bounded": true,
+    "third_party_novel_source_status": "unavailable_pending_rights"
+  },
+  "works": [
+    {
+      "book_id": "the-demon-king-overrun",
+      "status": "awaiting_authorized_source",
+      "narrator_pov": "unknown",
+      "facts_reviewed": 0,
+      "notes": "Do not seed plot, character identity, title variants, or pronouns from unofficial summaries."
+    },
+    {
+      "book_id": "nhung-la-thu-binh-minh",
+      "status": "demo_original_reviewed",
+      "narrator_pov": "third-person-observer",
+      "narrator_pov_evidence": "Demo chapters 1 and 2 are narrated in third person; original editorial seed."
+    }
+  ],
+  "facts": [
+    {
+      "id": "demo-bach-mien-clock-stopped",
+      "book_id": "nhung-la-thu-binh-minh",
+      "kind": "setting",
+      "status": "confirmed",
+      "locked": true,
+      "statement": "The bell-tower clock in Bạch Miên stopped at 4:17 before the events of chapter 1.",
+      "source_reference": "data/chapters/binh-minh-01.json#paragraphs/0",
+      "reviewed_by": "editorial-seed"
+    },
+    {
+      "id": "demo-ly-sees-tomorrow-date",
+      "book_id": "nhung-la-thu-binh-minh",
+      "kind": "character_knowledge",
+      "character_id": "ly",
+      "known_from_chapter": 1,
+      "status": "confirmed",
+      "locked": true,
+      "statement": "Ly knows the letter is dated tomorrow as of chapter 1.",
+      "source_reference": "data/chapters/binh-minh-01.json#paragraphs/3",
+      "reviewed_by": "editorial-seed"
+    },
+    {
+      "id": "demo-chau-waited-for-ly",
+      "book_id": "nhung-la-thu-binh-minh",
+      "kind": "character_knowledge",
+      "character_id": "chau",
+      "known_from_chapter": 1,
+      "status": "confirmed",
+      "locked": true,
+      "statement": "Châu says she has been waiting for Ly; her reason is not established.",
+      "source_reference": "data/chapters/binh-minh-01.json#paragraphs/5",
+      "reviewed_by": "editorial-seed"
+    },
+    {
+      "id": "dk-early-berge-rulebook-regression",
+      "book_id": "the-demon-king-overrun",
+      "kind": "setting",
+      "status": "candidate",
+      "locked": false,
+      "statement": "Berge rejects the Demon King's Guide following defeat; first scene is narrated in the protagonist's first-person perspective.",
+      "source_reference": "https://asurascans.com/novels/the-demon-king-overrun-by-heroes/chapter/1",
+      "verification_scope": "secondary English novel chapter 1; compare against manhwa chapter 1",
+      "note": "Not automatically canonical"
+    },
+    {
+      "id": "dk-early-gordon-appointed",
+      "book_id": "the-demon-king-overrun",
+      "kind": "social_role",
+      "status": "candidate",
+      "locked": false,
+      "statement": "Gordon is assigned to assist Berge; his outward duty differs from his private reaction.",
+      "source_reference": "https://asurascans.com/novels/the-demon-king-overrun-by-heroes/chapter/2",
+      "verification_scope": "secondary English novel chapter 2; compare VN comic",
+      "note": "Does not determine fixed pronouns"
+    },
+    {
+      "id": "dk-early-princess-identity",
+      "book_id": "the-demon-king-overrun",
+      "kind": "narrative_reveal_candidate",
+      "status": "candidate",
+      "locked": false,
+      "known_from_chapter": 6,
+      "statement": "Berge learns that he abducted the crown princess rather than the intended thirteenth princess.",
+      "source_reference": "https://asurascans.com/novels/the-demon-king-overrun-by-heroes/chapter/6",
+      "verification_scope": "English novel chapter 6, not equivalent to manhwa chapter 6",
+      "note": "Time index is novel chronology; no character ID locked yet"
+    },
+    {
+      "id": "dk-early-granada-address",
+      "book_id": "the-demon-king-overrun",
+      "kind": "social_role",
+      "status": "candidate",
+      "locked": false,
+      "statement": "Berge negotiates Granada's obligations and respectful address condition in a sparring arrangement.",
+      "source_reference": "https://asurascans.com/novels/the-demon-king-overrun-by-heroes/chapter/9",
+      "verification_scope": "secondary novel chapter 9, actual outcome not verified",
+      "note": "Do not infer phase change"
+    }
+  ]
+}

@@ -1,0 +1,334 @@
+{
+  "schema_version": 1,
+  "book_id": "the-demon-king-overrun",
+  "created_at": "2026-10-22",
+  "scope": {
+    "vn_manhwa_chapters_in_scope": [
+      1,
+      20
+    ],
+    "novel_secondary_chapters_in_scope": [
+      1,
+      20
+    ],
+    "not_accepted_after_manhwa_chapter": 20
+  },
+  "requested_source": "https://truyenqqko.com/truyen-tranh/su-chuan-muc-cua-ma-vuong-22584",
+  "requested_source_access": "UNAVAILABLE: remote fetch disabled, no chapter images verified from this host",
+  "sources": [
+    {
+      "id": "vn-mirror",
+      "url": "https://truyentranhmanhua.org/truyen-tranh/su-chuan-muc-cua-ma-vuong",
+      "scope": "VN alternative mirror; panel from chapter 1 only has been visually retrieved",
+      "trusted_for": "scene-specific observation, not sole canon",
+      "medium": "manhwa_vi_panel",
+      "selected_baseline": false
+    },
+    {
+      "id": "en-manhwa",
+      "url": "https://asurascans.com/comics/the-demon-king-overrun-by-heroes-11fe7da3",
+      "scope": "English manhwa chapter-index metadata 1–20; chapter 6 title visible",
+      "trusted_for": "character name/title cross-check, not Vietnamese pronouns",
+      "medium": "manhwa_english_chapter_title",
+      "selected_baseline": false
+    },
+    {
+      "id": "en-novel",
+      "url": "https://asurascans.com/novels/the-demon-king-overrun-by-heroes/chapter/1",
+      "scope": "secondary English novel chapters 1,2,5,6,9,12,19,20 inspected",
+      "trusted_for": "explicit role, timeline and relationship hypotheses; not canonical Vietnamese register",
+      "medium": "novel_english_secondary",
+      "selected_baseline": false
+    }
+  ],
+  "covered_vn_manhwa_panels": {
+    "chapters": [
+      1
+    ],
+    "panel_count": 1
+  },
+  "observations": [
+    {
+      "id": "manhwa-vi-001-battle-ta",
+      "medium": "manhwa_vi_panel",
+      "chapter": 1,
+      "source_url": "https://static-comic.truyentranhmanhua.org/su-chuan-muc-cua-ma-vuong/chap-1/su-chuan-muc-cua-ma-vuong-11.jpg",
+      "chapter_url": "https://truyentranhmanhua.org/truyen-tranh/su-chuan-muc-cua-ma-vuong/chap-1",
+      "claim_vi": "Khung giao chiến cho thấy đối thủ mặc giáp đen dùng ngôi tự xưng 'ta' khi nói về vảy rồng của mình.",
+      "about": [
+        "berge-deias"
+      ],
+      "field": "scene_specific_first_person",
+      "observed_value": "ta",
+      "evidence_grade": "panel_observed",
+      "identity_resolution": "cross_medium_provisional",
+      "approval": "scene_only",
+      "notes": "Đối chiếu với novel chương 1 về Ma Vương bị đâm xuyên lớp vảy; chưa đủ để kết luận quy tắc xưng hô A→B trong các cảnh khác.",
+      "source_edition_id": "vn-mirror",
+      "selected_baseline_verified": false,
+      "panel_number": 11,
+      "edition_match_status": "unverified",
+      "speaker_identity_status": "cross_medium_provisional",
+      "addressee_identity_status": "unknown"
+    },
+    {
+      "id": "manhwa-en-006-ernan-title",
+      "medium": "manhwa_english_chapter_title",
+      "chapter": 6,
+      "source_url": "https://asurascans.com/comics/the-demon-king-overrun-by-heroes-11fe7da3",
+      "claim_vi": "Tiêu đề manhwa chương 6 nhắc đích danh Ernan, là mốc đối chiếu tên nhưng không cho biết người nói/nghe trong cảnh.",
+      "about": [
+        "ernan-hilderan"
+      ],
+      "field": "identity_name",
+      "observed_value": "Ernan",
+      "evidence_grade": "chapter_title_observed",
+      "identity_resolution": "candidate",
+      "approval": "needs_vietnamese_panel",
+      "notes": "Title: Please Call Me Ernan! Không tự suy diễn Berze cần xưng hô như thế nào với Ernan.",
+      "source_edition_id": "en-manhwa",
+      "selected_baseline_verified": false,
+      "edition_match_status": "not_applicable"
+    },
+    {
+      "id": "novel-en-001-berge",
+      "medium": "novel_english_secondary",
+      "chapter": 1,
+      "source_url": "https://asurascans.com/novels/the-demon-king-overrun-by-heroes/chapter/1",
+      "claim_vi": "Lời gọi trong lễ tốt nghiệp xác lập nhân vật chính tên Berge Deias; phần đầu câu chuyện có lời kể ngôi thứ nhất từ góc nhìn Ma Vương.",
+      "about": [
+        "berge-deias"
+      ],
+      "field": "character_and_pov",
+      "observed_value": "Berge Deias; first-person in selected scenes",
+      "evidence_grade": "chapter_text_observed",
+      "approval": "cross_medium_only",
+      "notes": "Một bản dịch tiếng Anh khác dùng dạng Berze; chưa khóa dạng phiên âm Việt.",
+      "source_edition_id": "en-novel",
+      "selected_baseline_verified": false,
+      "edition_match_status": "not_applicable"
+    },
+    {
+      "id": "novel-en-002-gordon",
+      "medium": "novel_english_secondary",
+      "chapter": 2,
+      "source_url": "https://asurascans.com/novels/the-demon-king-overrun-by-heroes/chapter/2",
+      "claim_vi": "Gordon là hắc tinh linh được chỉ định làm phụ tá của Ma Vương Berge, vừa có nghĩa vụ phục vụ vừa bất mãn riêng trước hành động của Berge.",
+      "about": [
+        "gordon",
+        "berge-deias"
+      ],
+      "field": "identity_relation",
+      "observed_value": "Gordon -> Berge: appointed adjutant; inner displeasure",
+      "evidence_grade": "chapter_text_observed",
+      "approval": "cross_medium_only",
+      "notes": "Tách lời nói lịch sự với ý nghĩ riêng; không tự diễn thành trung thành tuyệt đối.",
+      "source_edition_id": "en-novel",
+      "selected_baseline_verified": false,
+      "edition_match_status": "not_applicable"
+    },
+    {
+      "id": "novel-en-005-address-gordon",
+      "medium": "novel_english_secondary",
+      "chapter": 5,
+      "source_url": "https://asurascans.com/novels/the-demon-king-overrun-by-heroes/chapter/5",
+      "claim_vi": "Gordon dùng kính ngữ với Berge và nhận lệnh quản lý tháp khi chủ đi vắng.",
+      "about": [
+        "gordon",
+        "berge-deias"
+      ],
+      "field": "directed_register",
+      "observed_value": "Gordon -> Berge: formal respectful address in English; Vietnamese pair unresolved",
+      "evidence_grade": "chapter_text_observed",
+      "approval": "needs_vietnamese_panel",
+      "notes": "'Your Majesty' trong bản EN chỉ là chứng cứ sắc thái kính trọng. Không tự đổi thành 'thần/bệ hạ' hoặc 'tôi/ngài'.",
+      "source_edition_id": "en-novel",
+      "selected_baseline_verified": false,
+      "edition_match_status": "not_applicable"
+    },
+    {
+      "id": "novel-en-006-ernan-rank",
+      "medium": "novel_english_secondary",
+      "chapter": 6,
+      "source_url": "https://asurascans.com/novels/the-demon-king-overrun-by-heroes/chapter/6",
+      "claim_vi": "Berze nghĩ mình bắt một công chúa thứ mười ba kém quan trọng nhưng sau đó biết người bị bắt là thái nữ Hilderan; phải giữ khác biệt giữa giả định và thông tin được tiết lộ.",
+      "about": [
+        "berge-deias",
+        "ernan-hilderan"
+      ],
+      "field": "knowledge_timeline",
+      "observed_value": "Misidentification revealed around novel chapter 6",
+      "evidence_grade": "chapter_text_observed",
+      "approval": "cross_medium_only",
+      "notes": "Không ngầm áp đặt bản chất của Ernan từ cách nhân vật khác nhìn nhận ở giai đoạn trước.",
+      "source_edition_id": "en-novel",
+      "selected_baseline_verified": false,
+      "edition_match_status": "not_applicable"
+    },
+    {
+      "id": "novel-en-009-granada",
+      "medium": "novel_english_secondary",
+      "chapter": 9,
+      "source_url": "https://asurascans.com/novels/the-demon-king-overrun-by-heroes/chapter/9",
+      "claim_vi": "Berge ra điều kiện: Granada có thể được đối xử như thuộc hạ và không phải dùng cách nói kính cẩn nếu thắng cuộc thử sức.",
+      "about": [
+        "berge-deias",
+        "granada"
+      ],
+      "field": "relation_phase_candidate",
+      "observed_value": "Respectful address / subordinate status explicitly under negotiation",
+      "evidence_grade": "chapter_text_observed",
+      "approval": "needs_scene_panel_and_outcome",
+      "notes": "Đây mới là điều kiện thương lượng; tuyệt đối không khóa là 'đã thay đổi' nếu thiếu kết quả và thời điểm.",
+      "source_edition_id": "en-novel",
+      "selected_baseline_verified": false,
+      "edition_match_status": "not_applicable"
+    },
+    {
+      "id": "novel-en-012-logger",
+      "medium": "novel_english_secondary",
+      "chapter": 12,
+      "source_url": "https://asurascans.com/novels/the-demon-king-overrun-by-heroes/chapter/12",
+      "claim_vi": "Logger được mô tả là thợ rèn người lùn và là một anh hùng; Berze đối đầu với Logger.",
+      "about": [
+        "logger",
+        "berge-deias"
+      ],
+      "field": "character_role",
+      "observed_value": "dwarf artisan / hero",
+      "evidence_grade": "chapter_text_observed",
+      "approval": "cross_medium_only",
+      "notes": "Tên khác 'Logar' xuất hiện ở bản dịch không thống nhất; không tự khóa alias.",
+      "source_edition_id": "en-novel",
+      "selected_baseline_verified": false,
+      "edition_match_status": "not_applicable"
+    },
+    {
+      "id": "novel-en-019-poil-orcs",
+      "medium": "novel_english_secondary",
+      "chapter": 19,
+      "source_url": "https://asurascans.com/novels/the-demon-king-overrun-by-heroes/chapter/19",
+      "claim_vi": "Một nhóm Poil Orc quỳ và cầu xin được làm thuộc hạ của Berge; cảnh có sắc thái tôn kính cấp bậc.",
+      "about": [
+        "berge-deias",
+        "krutu"
+      ],
+      "field": "scene_register",
+      "observed_value": "Orc group -> Berge: supplicant reverence",
+      "evidence_grade": "chapter_text_observed",
+      "approval": "cross_medium_only",
+      "notes": "Chưa chắc cá nhân nào nói từng câu, chưa khóa xưng hô.",
+      "source_edition_id": "en-novel",
+      "selected_baseline_verified": false,
+      "edition_match_status": "not_applicable"
+    },
+    {
+      "id": "novel-en-020-krutu",
+      "medium": "novel_english_secondary",
+      "chapter": 20,
+      "source_url": "https://asurascans.com/novels/the-demon-king-overrun-by-heroes/chapter/20",
+      "claim_vi": "Krutu tự giới thiệu là thủ lĩnh bộ tộc Red Frost, được Berge đồng ý nhận riêng làm thuộc hạ và đã chào Gordon như người có địa vị.",
+      "about": [
+        "krutu",
+        "gordon",
+        "berge-deias"
+      ],
+      "field": "new_directed_relationships",
+      "observed_value": "Krutu -> Berge / Gordon: hierarchical formal regard",
+      "evidence_grade": "chapter_text_observed",
+      "approval": "needs_vietnamese_panel",
+      "notes": "Không suy luận chiều ngược lại và không lập cặp đại từ tiếng Việt.",
+      "source_edition_id": "en-novel",
+      "selected_baseline_verified": false,
+      "edition_match_status": "not_applicable"
+    }
+  ],
+  "candidate_identities": [
+    {
+      "id": "berge-deias",
+      "observed": [
+        "Berge Deias",
+        "Berze Deias"
+      ],
+      "description": "Ma Vương, nhân vật trung tâm",
+      "sources": [
+        "https://asurascans.com/novels/the-demon-king-overrun-by-heroes/chapter/1",
+        "https://asurascans.com/comics/the-demon-king-overrun-by-heroes-11fe7da3"
+      ],
+      "name_locked": false,
+      "pronoun_locked": false
+    },
+    {
+      "id": "gordon",
+      "observed": [
+        "Gordon"
+      ],
+      "description": "Hắc tinh linh, phụ tá chỉ định của Berze",
+      "sources": [
+        "https://asurascans.com/novels/the-demon-king-overrun-by-heroes/chapter/2",
+        "https://asurascans.com/novels/the-demon-king-overrun-by-heroes/chapter/5"
+      ],
+      "name_locked": false,
+      "pronoun_locked": false
+    },
+    {
+      "id": "ernan-hilderan",
+      "observed": [
+        "Ernan",
+        "Ernyan"
+      ],
+      "description": "Công chúa Hilderan; thứ bậc thực tế là nút thắt cốt truyện",
+      "sources": [
+        "https://asurascans.com/comics/the-demon-king-overrun-by-heroes-11fe7da3",
+        "https://asurascans.com/novels/the-demon-king-overrun-by-heroes/chapter/6"
+      ],
+      "name_locked": false,
+      "pronoun_locked": false
+    },
+    {
+      "id": "granada",
+      "observed": [
+        "Granada"
+      ],
+      "description": "Nhân vật thương lượng với Berze về tư cách thuộc hạ và phép xưng hô",
+      "sources": [
+        "https://asurascans.com/novels/the-demon-king-overrun-by-heroes/chapter/9"
+      ],
+      "name_locked": false,
+      "pronoun_locked": false
+    },
+    {
+      "id": "logger",
+      "observed": [
+        "Logger",
+        "Logar"
+      ],
+      "description": "Thợ rèn người lùn và anh hùng",
+      "sources": [
+        "https://asurascans.com/novels/the-demon-king-overrun-by-heroes/chapter/12"
+      ],
+      "name_locked": false,
+      "pronoun_locked": false
+    },
+    {
+      "id": "krutu",
+      "observed": [
+        "Krutu"
+      ],
+      "description": "Thủ lĩnh Red Frost",
+      "sources": [
+        "https://asurascans.com/novels/the-demon-king-overrun-by-heroes/chapter/20"
+      ],
+      "name_locked": false,
+      "pronoun_locked": false
+    }
+  ],
+  "editorial_release_gate": "NOT_READY_FOR_CANON_LOCK",
+  "required_review": "Verify character identity and exact speaker/addressee in VN manhwa panels 1-20 or licensed Korean source, then independently review each directed pronoun with chapter/panel evidence.",
+  "prohibited_operations": [
+    "do_not_import_images_to_repo",
+    "do_not_commit_full_text",
+    "do_not_assign_global_pronouns",
+    "do_not_promote_candidates_without_independent_review"
+  ]
+}
