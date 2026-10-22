@@ -28,3 +28,12 @@ test("UTF-8 and paragraph boundaries",()=>{
  assert.throws(()=>decodeUtf8(new Uint8Array([255,254])));
  assert.throws(()=>decodeUtf8(new TextEncoder().encode("   ")));
 });
+
+test("Reader markup uses the expected responsive structure",async()=>{
+ const fs=await import("node:fs");
+ const html=fs.readFileSync(new URL("../personal.html",import.meta.url),"utf8");
+ for(const cls of ["reader-heading","layout","reading-column","pagination"]){
+  assert.match(html,new RegExp('class="'+cls+'"'));
+ }
+ assert.match(html,/aria-label="Mục lục"/);
+});
