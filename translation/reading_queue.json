@@ -39,8 +39,37 @@
         "event": "Các thợ lùn được huy động; tháp hợp nhất và gia cường",
         "status": "located",
         "source_url": "https://www.beastnovels.com/series/the-demon-king-overrun-by-heroes/150"
+      },
+      {
+        "chapter": 154,
+        "event": "Một thợ lùn báo hạng mục hoàn thành; chưa kiểm chứng chính xác đối tượng",
+        "status": "candidate",
+        "source_url": "https://web.mgnovel.id/the-demon-king-overrun-by-heroes/154/"
+      },
+      {
+        "chapter": 155,
+        "event": "Tên chương The Tower's Legs, có thể là mốc thử chân tháp",
+        "status": "title_only",
+        "source_url": "https://asurascans.com/novels/the-demon-king-overrun-by-heroes"
+      },
+      {
+        "chapter": 156,
+        "event": "Tên chương The Tower's Whereabouts, có thể là hậu quả tháp đổi vị trí",
+        "status": "title_only",
+        "source_url": "https://asurascans.com/novels/the-demon-king-overrun-by-heroes"
+      },
+      {
+        "chapter": 160,
+        "event": "Hồi cố cho thấy tháp đã di chuyển và được giấu dưới biển",
+        "status": "retrospective",
+        "source_url": "https://novelbin.com/b/the-demon-king-overrun-by-heroes/chapter-160-common-sense"
       }
-    ]
+    ],
+    "completion_candidate_novel_chapter": 154,
+    "completion_candidate_confidence": "tentative_indexed_excerpt",
+    "first_movement_candidate_novel_chapter": 155,
+    "first_movement_confidence": "unverified",
+    "confirmed_mobile_by_novel_chapter": 160
   },
   "order": "ascending_from_137",
   "defer_chapters_before": 137,
@@ -48,5 +77,6 @@
   "public_chapter_publication": "blocked_until_distribution_license",
   "private_local_translation": "tool_supported_on_user_provided_input",
   "current_private_chapter_status": "awaiting_user_supplied_source",
-  "notes": "Nguồn trang web tiếng Anh là tài liệu định vị chương, không phải giấy phép phân phối hay kho văn bản nhập tự động. Không tự dịch/chép nguyên chương từ trang bên thứ ba vào output của tác vụ."
+  "notes": "Các mốc 154-156 chỉ là ứng viên, chưa xác minh chương đầu tiên tháp di chuyển. Chương 160 là bằng chứng hồi cố. Không sao chép nội dung chương hoặc coi website thứ ba là giấy phép dịch/đăng.",
+  "source_discovery_policy": "metadata_only_no_full_chapter_fetch"
 }
