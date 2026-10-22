@@ -1,38 +1,9 @@
-<!doctype html>
-<html lang="vi">
-<head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="robots" content="noindex,nofollow">
-<title>Không gian đọc cá nhân — visuNovel</title>
-<style>
-:root{color-scheme:dark;--bg:#10121a;--fg:#eee8e1;--soft:#9b98a3;--panel:#202330;--accent:#e8bb96}
-:root.light{color-scheme:light;--bg:#f8f5ee;--fg:#25242d;--soft:#706d73;--panel:#eae4da;--accent:#975334}
-*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font:15px/1.7 system-ui,sans-serif}
-a{color:var(--accent)}.top{display:flex;justify-content:space-between;align-items:center;padding:18px clamp(20px,5vw,70px);border-bottom:1px solid #8884;gap:15px}.brand{font:italic 31px Georgia,serif;text-decoration:none;letter-spacing:-1px}.brand span{color:var(--accent)}
-.actions{display:flex;gap:8px;align-items:center;flex-wrap:wrap}button,.pick{background:var(--panel);border:1px solid #9994;color:var(--fg);padding:8px 13px;cursor:pointer;font-size:12px}button:hover,.pick:hover{border-color:var(--accent)}
-main{max-width:730px;margin:65px auto;padding:0 24px}.tag{font-size:10px;color:var(--accent);letter-spacing:.25em;font-weight:700}h1{font:normal 43px/1.2 Georgia,serif;letter-spacing:-.04em}.intro{color:var(--soft);line-height:1.95}.drop{display:block;margin:30px 0;border:1px dashed #9997;padding:35px 24px;text-align:center;cursor:pointer}.drop.drag{border-color:var(--accent);background:var(--panel)}.drop strong{display:block;font-size:16px}.drop small{display:block;color:var(--soft);margin-top:7px}.drop input{display:none}.privacy{font-size:12px;color:var(--soft)}.reader{display:none}.reader h2{font:normal 36px/1.4 Georgia,serif;letter-spacing:-.02em;text-align:center;margin:45px 0}.prose{font:var(--size,20px)/2.05 Georgia,'Times New Roman',serif;white-space:pre-wrap;overflow-wrap:anywhere}.prose p{margin:0 0 1.45em;text-indent:1.4em}.tools{display:flex;gap:10px;justify-content:center;margin:35px 0}.reader-meta{color:var(--soft);font-size:12px;text-align:center}#error{color:#f4a79c;min-height:1em}
-@media(max-width:650px){h1{font-size:34px}main{margin:40px auto}.prose{font-size:var(--size,19px)}.top{flex-wrap:wrap}}
-</style>
-</head>
-<body>
-<header class="top"><a class="brand" href="./">visu<span>novel</span></a><nav class="actions"><a href="./">← Thư viện</a><button id="smaller" type="button">A−</button><button id="larger" type="button">A+</button><button id="theme" type="button">◐</button></nav></header>
-<main>
-<div id="landing"><p class="tag">PRIVATE READING MODE</p><h1>Không gian đọc <em>của riêng bạn.</em></h1><p class="intro">Mở chương truyện dạng <code>.txt</code> hoặc <code>.md</code> bạn đang có. Nội dung chỉ được đọc trong trình duyệt của bạn, không gửi lên máy chủ visuNovel và không đưa vào GitHub.</p><label class="drop" id="drop"><strong>Chọn hoặc kéo thả tệp chương truyện</strong><small>TXT, MD · UTF-8 · tối đa 5 MB</small><input type="file" id="upload" accept=".txt,.md,text/plain,text/markdown"></label><p id="error"></p><p class="privacy">Đây là trình đọc riêng tư, không phải dịch tự động. Để tạo bản dịch thử từ văn bản do bạn cung cấp, xem công cụ <a href="https://github.com/tailolicon/visunovel/blob/main/tools/personal_translate.py" target="_blank" rel="noopener">personal_translate.py</a>.</p></div>
-<section class="reader" id="reader"><p class="tag">MY PERSONAL LIBRARY</p><p class="reader-meta" id="filename"></p><h2 id="heading"></h2><div class="tools"><button id="switchFile" type="button">← Mở chương khác</button></div><article class="prose" id="text"></article></section>
-</main>
-<script>
-const root=document.documentElement,landing=document.querySelector('#landing'),reader=document.querySelector('#reader'),upload=document.querySelector('#upload'),drop=document.querySelector('#drop'),msg=document.querySelector('#error'),text=document.querySelector('#text');
-let font=20;
-function loadFile(file){if(!file)return;msg.textContent='';if(file.size>5*1024*1024){msg.textContent='Tệp vượt 5 MB';return;}if(!/\.(txt|md)$/i.test(file.name)){msg.textContent='Chỉ hỗ trợ TXT hoặc MD';return;}
-file.text().then(raw=>{if(!raw.trim()){msg.textContent='Tệp rỗng';return;}
-text.replaceChildren();for(const paragraph of raw.replace(/\r\n?/g,'\n').split(/\n\s*\n/)){const p=document.createElement('p');p.textContent=paragraph.trim();if(p.textContent)text.append(p);}
-document.querySelector('#heading').textContent=file.name.replace(/\.(txt|md)$/i,'').replace(/[_-]/g,' ');document.querySelector('#filename').textContent=file.name+' • chỉ trong phiên hiện tại';reader.style.display='block';landing.style.display='none';scrollTo(0,0);
-}).catch(()=>{msg.textContent='Không thể đọc tệp này';});}
-upload.addEventListener('change',e=>loadFile(e.target.files[0]));drop.addEventListener('dragover',e=>{e.preventDefault();drop.classList.add('drag')});drop.addEventListener('dragleave',()=>drop.classList.remove('drag'));drop.addEventListener('drop',e=>{e.preventDefault();drop.classList.remove('drag');loadFile(e.dataTransfer.files[0]);});
-document.querySelector('#switchFile').addEventListener('click',()=>{reader.style.display='none';landing.style.display='block';text.replaceChildren();upload.value='';scrollTo(0,0);});
-document.querySelector('#theme').addEventListener('click',()=>root.classList.toggle('light'));
-document.querySelector('#smaller').addEventListener('click',()=>{font=Math.max(16,font-1);text.style.setProperty('--size',font+'px');});
-document.querySelector('#larger').addEventListener('click',()=>{font=Math.min(29,font+1);text.style.setProperty('--size',font+'px');});
-</script>
-</body>
-</html>
+<!doctype html><html lang="vi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow"><meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; connect-src 'none'"><title>visuNovel — Đọc cá nhân</title><link rel="stylesheet" href="./assets/personal.css"><script type="module" src="./assets/personal.js"></script></head><body>
+<header><a href="./">visuNovel</a><button id="themeToggle">◐</button></header>
+<main><section id="welcome"><h1>Không gian đọc cá nhân</h1><p>Đọc chương 137 trở đi từ TXT/MD trên thiết bị.</p>
+<label id="dropzone" for="fileInput">Chọn nhiều tệp hoặc kéo thả vào đây</label><input id="fileInput" type="file" multiple accept=".txt,.md"><p id="errorMessage" role="alert" hidden></p><p id="statusMessage" role="status"></p><p>Không tải lên máy chủ, không lưu trong trình duyệt.</p></section>
+<section id="reader" hidden><p id="collectionSummary"></p><label for="fileInput">Thay tệp</label><button id="clearButton">Xóa khỏi tab</button>
+<aside><h2>Mục lục <span id="chapterCount"></span></h2><ol id="chapterList"></ol></aside>
+<div class="toolbar"><button id="fontDown">A−</button><span id="fontLabel">20 px</span><button id="fontUp">A+</button></div>
+<article><p id="chapterKicker"></p><h1 id="readerTitle" tabindex="-1"></h1><p id="sourceFilename"></p><div id="chapterText"></div></article>
+<nav><button id="prevChapter">← Trước</button><button id="nextChapter">Sau →</button></nav></section></main></body></html>
