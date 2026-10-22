@@ -29,7 +29,8 @@ async function load(files){
   state.entries=entries;state.current=-1;
   $("collectionSummary").textContent=entries.length+" tệp · chỉ lưu trong tab này";
   $("chapterCount").textContent=String(entries.length);
-  await show(0);
+  const preferred=entries.findIndex(item=>item.chapter!==null&&item.chapter>=137);
+  await show(preferred<0?0:preferred);
  }catch(e){error(e.message);}
 }
 input.addEventListener("change",()=>{if(input.files.length)void load(input.files);input.value="";});
