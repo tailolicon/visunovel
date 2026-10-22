@@ -3,6 +3,7 @@ import {setupControls,renderList} from "./personal-ui.mjs";
 const $=id=>document.getElementById(id);
 const state={entries:[],current:-1,ticket:0};
 const welcome=$("welcome"),reader=$("reader"),input=$("fileInput"),prose=$("chapterText");
+const notices=document.createElement("div");notices.className="notices";welcome.before(notices);notices.append($("errorMessage"),$("statusMessage"));
 function error(message){$("errorMessage").textContent=message;$("errorMessage").hidden=false;}
 function resetError(){$("errorMessage").textContent="";$("errorMessage").hidden=true;}
 async function show(index){
