@@ -21,3 +21,4 @@ jobs:
           node --check assets/personal-ui.mjs
           node --check assets/personal-core.mjs
           node --test tests/personal-reader.test.mjs
+          python3 -m py_compile scripts/check_public_bundle.py
