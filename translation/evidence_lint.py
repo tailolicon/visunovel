@@ -55,6 +55,13 @@ def validate(data:dict, canon:dict|None=None, bible:dict|None=None)->list[str]:
         if any(k in obs for k in BLOCKED_FIELDS):err(loc+": no original panels/chapter text permitted")
     if not ids:err("no source observations")
     if canon is not None:
+        # The pending ledger cannot silently promote names, glossary or phases.
+        for section in ("characters", "terms", "relationship_transitions"):
+            for idx, item in enumerate(canon.get(section, [])):
+                if item.get("book_id") == data.get("book_id") and (
+                    item.get("locked") is True or section == "relationship_transitions"
+                ):
+                    err(f"{section}[{idx}]: pending evidence cannot authorize canon promotion")
         for i,row in enumerate(canon.get("relationship_review_queue",[])):
             if row.get("book_id")!=data.get("book_id"):continue
             loc=f"queue[{i}]"
