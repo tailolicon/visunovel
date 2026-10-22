@@ -3,7 +3,9 @@ on:
   push:
     paths:
       - "tools/independent_qa.py"
+      - "tools/personal_translate.py"
       - "tests/test_independent_qa.py"
+      - "tests/test_personal_translate_regression.py"
       - "data/chapters/**"
       - "translation/canon.json"
       - ".github/workflows/independent-qa.yml"
@@ -17,5 +19,7 @@ jobs:
       - uses: actions/checkout@v4
       - name: Independent QA regression suite
         run: python3 -m unittest discover -s tests -p "test_independent_qa.py" -v
+      - name: Translator input and dry-run regression suite
+        run: python3 -m unittest discover -s tests -p "test_personal_translate_regression.py" -v
       - name: Offline CLI smoke on original demo fixture
         run: python3 tools/independent_qa.py tests/example-source.txt tests/example-source.txt --book-id nhung-la-thu-binh-minh --chapter 1
