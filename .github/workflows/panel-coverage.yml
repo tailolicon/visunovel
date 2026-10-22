@@ -1,0 +1,25 @@
+name: Manhwa evidence coverage integrity
+on:
+  push:
+    paths:
+      - 'translation/evidence_01_20.json'
+      - 'translation/verify_panel_coverage.py'
+      - 'tests/test_panel_coverage.py'
+      - '.github/workflows/panel-coverage.yml'
+  pull_request:
+    paths:
+      - 'translation/evidence_01_20.json'
+      - 'translation/verify_panel_coverage.py'
+      - 'tests/test_panel_coverage.py'
+      - '.github/workflows/panel-coverage.yml'
+permissions:
+  contents: read
+jobs:
+  evidence-coverage:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate claimed coverage against source image evidence
+        run: python3 translation/verify_panel_coverage.py
+      - name: Run synthetic regression tests
+        run: python3 -m unittest discover -s tests -p 'test_panel_coverage.py' -v
