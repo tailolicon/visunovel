@@ -20,19 +20,25 @@
       "id": "vn-mirror",
       "url": "https://truyentranhmanhua.org/truyen-tranh/su-chuan-muc-cua-ma-vuong",
       "scope": "VN alternative mirror; panel from chapter 1 only has been visually retrieved",
-      "trusted_for": "scene-specific observation, not sole canon"
+      "trusted_for": "scene-specific observation, not sole canon",
+      "medium": "manhwa_vi_panel",
+      "selected_baseline": false
     },
     {
       "id": "en-manhwa",
       "url": "https://asurascans.com/comics/the-demon-king-overrun-by-heroes-11fe7da3",
       "scope": "English manhwa chapter-index metadata 1–20; chapter 6 title visible",
-      "trusted_for": "character name/title cross-check, not Vietnamese pronouns"
+      "trusted_for": "character name/title cross-check, not Vietnamese pronouns",
+      "medium": "manhwa_english_chapter_title",
+      "selected_baseline": false
     },
     {
       "id": "en-novel",
       "url": "https://asurascans.com/novels/the-demon-king-overrun-by-heroes/chapter/1",
       "scope": "secondary English novel chapters 1,2,5,6,9,12,19,20 inspected",
-      "trusted_for": "explicit role, timeline and relationship hypotheses; not canonical Vietnamese register"
+      "trusted_for": "explicit role, timeline and relationship hypotheses; not canonical Vietnamese register",
+      "medium": "novel_english_secondary",
+      "selected_baseline": false
     }
   ],
   "covered_vn_manhwa_panels": {
@@ -57,7 +63,13 @@
       "evidence_grade": "panel_observed",
       "identity_resolution": "cross_medium_provisional",
       "approval": "scene_only",
-      "notes": "Đối chiếu với novel chương 1 về Ma Vương bị đâm xuyên lớp vảy; chưa đủ để kết luận quy tắc xưng hô A→B trong các cảnh khác."
+      "notes": "Đối chiếu với novel chương 1 về Ma Vương bị đâm xuyên lớp vảy; chưa đủ để kết luận quy tắc xưng hô A→B trong các cảnh khác.",
+      "source_edition_id": "vn-mirror",
+      "selected_baseline_verified": false,
+      "panel_number": 11,
+      "edition_match_status": "unverified",
+      "speaker_identity_status": "cross_medium_provisional",
+      "addressee_identity_status": "unknown"
     },
     {
       "id": "manhwa-en-006-ernan-title",
@@ -73,7 +85,10 @@
       "evidence_grade": "chapter_title_observed",
       "identity_resolution": "candidate",
       "approval": "needs_vietnamese_panel",
-      "notes": "Title: Please Call Me Ernan! Không tự suy diễn Berze cần xưng hô như thế nào với Ernan."
+      "notes": "Title: Please Call Me Ernan! Không tự suy diễn Berze cần xưng hô như thế nào với Ernan.",
+      "source_edition_id": "en-manhwa",
+      "selected_baseline_verified": false,
+      "edition_match_status": "not_applicable"
     },
     {
       "id": "novel-en-001-berge",
@@ -88,7 +103,10 @@
       "observed_value": "Berge Deias; first-person in selected scenes",
       "evidence_grade": "chapter_text_observed",
       "approval": "cross_medium_only",
-      "notes": "Một bản dịch tiếng Anh khác dùng dạng Berze; chưa khóa dạng phiên âm Việt."
+      "notes": "Một bản dịch tiếng Anh khác dùng dạng Berze; chưa khóa dạng phiên âm Việt.",
+      "source_edition_id": "en-novel",
+      "selected_baseline_verified": false,
+      "edition_match_status": "not_applicable"
     },
     {
       "id": "novel-en-002-gordon",
@@ -104,7 +122,10 @@
       "observed_value": "Gordon -> Berge: appointed adjutant; inner displeasure",
       "evidence_grade": "chapter_text_observed",
       "approval": "cross_medium_only",
-      "notes": "Tách lời nói lịch sự với ý nghĩ riêng; không tự diễn thành trung thành tuyệt đối."
+      "notes": "Tách lời nói lịch sự với ý nghĩ riêng; không tự diễn thành trung thành tuyệt đối.",
+      "source_edition_id": "en-novel",
+      "selected_baseline_verified": false,
+      "edition_match_status": "not_applicable"
     },
     {
       "id": "novel-en-005-address-gordon",
@@ -120,7 +141,10 @@
       "observed_value": "Gordon -> Berge: formal respectful address in English; Vietnamese pair unresolved",
       "evidence_grade": "chapter_text_observed",
       "approval": "needs_vietnamese_panel",
-      "notes": "'Your Majesty' trong bản EN chỉ là chứng cứ sắc thái kính trọng. Không tự đổi thành 'thần/bệ hạ' hoặc 'tôi/ngài'."
+      "notes": "'Your Majesty' trong bản EN chỉ là chứng cứ sắc thái kính trọng. Không tự đổi thành 'thần/bệ hạ' hoặc 'tôi/ngài'.",
+      "source_edition_id": "en-novel",
+      "selected_baseline_verified": false,
+      "edition_match_status": "not_applicable"
     },
     {
       "id": "novel-en-006-ernan-rank",
@@ -136,7 +160,10 @@
       "observed_value": "Misidentification revealed around novel chapter 6",
       "evidence_grade": "chapter_text_observed",
       "approval": "cross_medium_only",
-      "notes": "Không ngầm áp đặt bản chất của Ernan từ cách nhân vật khác nhìn nhận ở giai đoạn trước."
+      "notes": "Không ngầm áp đặt bản chất của Ernan từ cách nhân vật khác nhìn nhận ở giai đoạn trước.",
+      "source_edition_id": "en-novel",
+      "selected_baseline_verified": false,
+      "edition_match_status": "not_applicable"
     },
     {
       "id": "novel-en-009-granada",
@@ -152,7 +179,10 @@
       "observed_value": "Respectful address / subordinate status explicitly under negotiation",
       "evidence_grade": "chapter_text_observed",
       "approval": "needs_scene_panel_and_outcome",
-      "notes": "Đây mới là điều kiện thương lượng; tuyệt đối không khóa là 'đã thay đổi' nếu thiếu kết quả và thời điểm."
+      "notes": "Đây mới là điều kiện thương lượng; tuyệt đối không khóa là 'đã thay đổi' nếu thiếu kết quả và thời điểm.",
+      "source_edition_id": "en-novel",
+      "selected_baseline_verified": false,
+      "edition_match_status": "not_applicable"
     },
     {
       "id": "novel-en-012-logger",
@@ -168,7 +198,10 @@
       "observed_value": "dwarf artisan / hero",
       "evidence_grade": "chapter_text_observed",
       "approval": "cross_medium_only",
-      "notes": "Tên khác 'Logar' xuất hiện ở bản dịch không thống nhất; không tự khóa alias."
+      "notes": "Tên khác 'Logar' xuất hiện ở bản dịch không thống nhất; không tự khóa alias.",
+      "source_edition_id": "en-novel",
+      "selected_baseline_verified": false,
+      "edition_match_status": "not_applicable"
     },
     {
       "id": "novel-en-019-poil-orcs",
@@ -184,7 +217,10 @@
       "observed_value": "Orc group -> Berge: supplicant reverence",
       "evidence_grade": "chapter_text_observed",
       "approval": "cross_medium_only",
-      "notes": "Chưa chắc cá nhân nào nói từng câu, chưa khóa xưng hô."
+      "notes": "Chưa chắc cá nhân nào nói từng câu, chưa khóa xưng hô.",
+      "source_edition_id": "en-novel",
+      "selected_baseline_verified": false,
+      "edition_match_status": "not_applicable"
     },
     {
       "id": "novel-en-020-krutu",
@@ -201,7 +237,10 @@
       "observed_value": "Krutu -> Berge / Gordon: hierarchical formal regard",
       "evidence_grade": "chapter_text_observed",
       "approval": "needs_vietnamese_panel",
-      "notes": "Không suy luận chiều ngược lại và không lập cặp đại từ tiếng Việt."
+      "notes": "Không suy luận chiều ngược lại và không lập cặp đại từ tiếng Việt.",
+      "source_edition_id": "en-novel",
+      "selected_baseline_verified": false,
+      "edition_match_status": "not_applicable"
     }
   ],
   "candidate_identities": [

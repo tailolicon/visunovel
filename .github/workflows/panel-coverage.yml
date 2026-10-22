@@ -4,13 +4,17 @@ on:
     paths:
       - 'translation/evidence_01_20.json'
       - 'translation/verify_panel_coverage.py'
+      - 'translation/edition_provenance_lint.py'
       - 'tests/test_panel_coverage.py'
+      - 'tests/test_edition_provenance_lint.py'
       - '.github/workflows/panel-coverage.yml'
   pull_request:
     paths:
       - 'translation/evidence_01_20.json'
       - 'translation/verify_panel_coverage.py'
+      - 'translation/edition_provenance_lint.py'
       - 'tests/test_panel_coverage.py'
+      - 'tests/test_edition_provenance_lint.py'
       - '.github/workflows/panel-coverage.yml'
 permissions:
   contents: read
@@ -21,5 +25,9 @@ jobs:
       - uses: actions/checkout@v4
       - name: Validate claimed coverage against source image evidence
         run: python3 translation/verify_panel_coverage.py
+      - name: Verify edition attribution and selected-baseline claims
+        run: python3 translation/edition_provenance_lint.py
+      - name: Run edition provenance regressions
+        run: python3 -m unittest discover -s tests -p 'test_edition_provenance_lint.py' -v
       - name: Run synthetic regression tests
         run: python3 -m unittest discover -s tests -p 'test_panel_coverage.py' -v

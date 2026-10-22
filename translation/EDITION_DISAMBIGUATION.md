@@ -15,3 +15,13 @@ An image from a mirror is NOT assumed identical to the TruyenQQKo version. Recor
 Current direct Vietnamese panel evidence: **one chapter-1 image on a mirror**, zero additional panels verified in this run, zero new approved A→B/B→A address pairs. All names, glossary entries, and relationship phase changes remain pending independent review.
 
 The separate workflow `.github/workflows/panel-coverage.yml` enforces that index entries and duplicate observations cannot inflate verified image coverage. No comic image or full chapter text is stored in the repository.
+
+## Edition identity guard (2026-10-22)
+
+The user-selected TruyenQQKo URL still returns `DisabledError`. A reader shell for chapter 2 on the alternate mirror was reachable, but **the dialogue images were not actually inspected**. No new Vietnamese speech evidence is approved.
+
+Every observation now carries a `source_edition_id` tied to a declared host and medium. The single chapter-1 panel is explicitly `vn-mirror` with `edition_match_status: unverified`, `selected_baseline_verified: false`, provisional speaker identity, and unknown addressee. English novel/title observations are marked `not_applicable` for Vietnamese edition matching.
+
+The new `edition_provenance_lint.py` rejects missing edition IDs, unrelated image hosts, mirror-as-primary claims, invented selected-source status, and direct-panel approvals without visual-review metadata. This is a **structural metadata gate**, not proof the cited images were examined. Only a future inspection of the selected edition can justify the `selected_baseline_verified` flag. Until then the selected-source panel count is **zero**, while the historical unmatched mirror-panel count is **one**.
+
+`python3 translation/edition_provenance_lint.py` and `python3 -m unittest discover -s tests -p 'test_edition_provenance_lint.py' -v` are part of the panel-coverage CI.
