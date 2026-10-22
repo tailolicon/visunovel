@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "updated_at": "2026-10-22",
+  "book_id": "the-demon-king-overrun",
+  "original_title": "마왕인데 용사가 너무 많음",
+  "public_release": {
+    "rights_status": "pending",
+    "translation_rights_verified": false,
+    "online_distribution_rights_verified": false,
+    "permission_document": null,
+    "territory": null,
+    "media": null,
+    "expiration": null,
+    "source_snapshot_sha256": null,
+    "source_pin": null,
+    "allowed_to_publish": false
+  },
+  "personal_reading": {
+    "source_origin": "user_supplied_local_text_only",
+    "remote_ai_requires_explicit_opt_in": true,
+    "upload_to_github": false,
+    "auto_scrape": false,
+    "auto_publish": false
+  },
+  "sources": [
+    {
+      "id": "publisher",
+      "url": "https://m.munpia.com/novel/detail/257796",
+      "role": "original_korean_listing",
+      "may_fetch_full_chapters": false,
+      "may_translate_or_republish": false,
+      "license_evidence": null
+    },
+    {
+      "id": "index-en-asura",
+      "url": "https://asurascans.com/novels/the-demon-king-overrun-by-heroes",
+      "role": "secondary_chapter_title_index",
+      "may_fetch_full_chapters": false,
+      "may_translate_or_republish": false,
+      "license_evidence": null
+    },
+    {
+      "id": "index-en-beast",
+      "url": "https://beastnovels.com/series/the-demon-king-overrun-by-heroes",
+      "role": "secondary_chapter_title_index",
+      "may_fetch_full_chapters": false,
+      "may_translate_or_republish": false,
+      "license_evidence": null
+    }
+  ],
+  "priority_first_novel_chapter": 137,
+  "rights_review_status": "awaiting_permission_document",
+  "note": "Metadata discovery is not a translation or publication license. A personal copy must remain outside GitHub Pages."
+}
