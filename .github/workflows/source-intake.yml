@@ -1,0 +1,37 @@
+name: Source and rights intake integrity
+on:
+  push:
+    paths:
+      - 'translation/reading_queue.json'
+      - 'translation/source_registry.json'
+      - 'translation/ARC_137.md'
+      - 'scripts/check_source_queue.py'
+      - 'tests/test_source_queue.py'
+      - 'tools/local_intake.py'
+      - 'tests/test_local_intake.py'
+      - '.github/workflows/source-intake.yml'
+  pull_request:
+    paths:
+      - 'translation/reading_queue.json'
+      - 'translation/source_registry.json'
+      - 'translation/ARC_137.md'
+      - 'scripts/check_source_queue.py'
+      - 'tests/test_source_queue.py'
+      - 'tools/local_intake.py'
+      - 'tests/test_local_intake.py'
+      - '.github/workflows/source-intake.yml'
+permissions:
+  contents: read
+jobs:
+  rights:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Source registry and queue gate
+        run: python3 scripts/check_source_queue.py
+      - name: Source queue regression tests
+        run: python3 -m unittest discover -s tests -p 'test_source_queue.py' -v
+      - name: Private intake regression tests
+        run: python3 -m unittest discover -s tests -p 'test_local_intake.py' -v
+      - name: Existing publication gate
+        run: python3 scripts/check.py
