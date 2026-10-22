@@ -41,4 +41,4 @@ drop.addEventListener("dragover",e=>{e.preventDefault();drop.classList.add("drag
 drop.addEventListener("dragleave",()=>drop.classList.remove("dragging"));
 drop.addEventListener("drop",e=>{e.preventDefault();drop.classList.remove("dragging");if(e.dataTransfer.files.length)void load(e.dataTransfer.files);});
 setupControls(state,show,()=>{state.ticket++;state.entries=[];state.current=-1;prose.replaceChildren();$("chapterList").replaceChildren();reader.hidden=true;welcome.hidden=false;resetError();$("statusMessage").textContent="Đã xóa bộ tệp khỏi tab.";});
-addEventListener("pagehide",()=>{state.ticket++;state.entries=[];prose.replaceChildren();});
+addEventListener("pagehide",()=>{state.ticket++;state.entries=[];state.current=-1;prose.replaceChildren();$("chapterList").replaceChildren();$("readerTitle").textContent="";$("sourceFilename").textContent="";reader.hidden=true;welcome.hidden=false;});
