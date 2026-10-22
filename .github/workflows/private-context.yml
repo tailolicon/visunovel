@@ -1,0 +1,23 @@
+name: Private context regression
+on:
+  push:
+    paths:
+      - 'tools/private_context.py'
+      - 'tests/test_private_context.py'
+      - '.github/workflows/private-context.yml'
+  pull_request:
+    paths:
+      - 'tools/private_context.py'
+      - 'tests/test_private_context.py'
+      - '.github/workflows/private-context.yml'
+permissions:
+  contents: read
+jobs:
+  offline:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate syntax and tests
+        run: |
+          python3 -m py_compile tools/private_context.py
+          python3 -m unittest discover -s tests -p 'test_private_context.py' -v
