@@ -61,3 +61,23 @@ class EvidenceTests(unittest.TestCase):
 
 if __name__=="__main__":
     unittest.main()
+
+
+# Independent regression tests also run under the existing context CI gate.
+class PendingPromotionTests(unittest.TestCase):
+    def test_locked_character_rejected(self):
+        data, canon, bible = fixture()
+        canon["characters"] = [{"book_id": data["book_id"], "locked": True}]
+        self.assertTrue(any("pending evidence" in issue for issue in validate(data, canon, bible)))
+
+    def test_locked_glossary_rejected(self):
+        data, canon, bible = fixture()
+        canon["terms"] = [{"book_id": data["book_id"], "locked": True}]
+        self.assertTrue(any("pending evidence" in issue for issue in validate(data, canon, bible)))
+
+    def test_unreviewed_transition_rejected(self):
+        data, canon, bible = fixture()
+        canon["relationship_transitions"] = [{"book_id": data["book_id"]}]
+        self.assertTrue(any("pending evidence" in issue for issue in validate(data, canon, bible)))
+
+from test_independent_qa import DraftQATests
