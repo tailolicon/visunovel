@@ -101,7 +101,8 @@ def main() -> int:
             f.write("\n")
         out.chmod(0o600)
         print("Local QA report:", out, "blockers:", len(report["blockers"]))
-        return 0 if not set(report["blockers"]) - {"public_rights_pending"} else 1
+        print("Literary QA remains NOT_REVIEWED; public release remains BLOCKED.")
+        return 1 if report["blockers"] else 0
     except (OSError, ValueError, UnicodeError) as exc:
         print("QA ERROR:", exc, file=sys.stderr)
         return 2
