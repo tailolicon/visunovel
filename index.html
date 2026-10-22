@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#10121c">
+  <meta name="description" content="visuNovel — không gian đọc tiểu thuyết tiếng Việt. Trải nghiệm đọc thanh lịch, dễ chịu và biên tập nhất quán.">
+  <title>visuNovel — Đọc một thế giới khác</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%2310121c'/%3E%3Ctext x='32' y='45' font-family='Georgia' font-style='italic' font-size='52' fill='%23efc8a1' text-anchor='middle'%3EV%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="./assets/style.css">
+  <script src="./assets/app.js" type="module"></script>
+</head>
+<body>
+  <div class="background-noise" aria-hidden="true"></div>
+  <div class="shell">
+    <header class="topbar">
+      <a href="#home" class="brand" aria-label="visuNovel, trang chủ"><span class="brand-emblem">v<span>.</span></span><span class="brand-label">visu<span>novel</span><small>STORIES, BEAUTIFULLY TOLD</small></span></a>
+      <nav class="navlinks" aria-label="Điều hướng">
+        <a href="#home" class="navlink active" data-nav="home">Khám phá</a>
+        <a href="#library" class="navlink" data-nav="library">Thư viện</a>
+        <a href="#about" class="navlink" data-nav="about">Về chúng tôi</a>
+      </nav>
+      <div class="header-actions">
+        <button class="icon-button" id="themeButton" aria-label="Đổi giao diện sáng tối" title="Giao diện sáng/tối"><span id="themeIcon">☾</span></button>
+        <a class="header-cta" href="#library">Đọc truyện <span>↗</span></a>
+      </div>
+    </header>
+
+    <main id="homeView">
+      <section class="hero" aria-labelledby="heroTitle">
+        <div class="hero-copy">
+          <div class="eyebrow"><span class="eyebrow-line"></span> THE ART OF READING <span class="tiny-star">✦</span> 2026</div>
+          <h1 id="heroTitle">Mỗi câu chuyện.<br><em>Một thế giới</em> khác.</h1>
+          <p class="hero-description">Những trang truyện mở ra một nơi chốn mới. Khám phá, lưu lại, và đắm mình trong từng con chữ — theo cách của riêng bạn.</p>
+          <div class="hero-actions"><a class="primary-button" href="#library">Bước vào thư viện <span aria-hidden="true">↗</span></a><a class="text-button" href="#about">Khám phá visuNovel <span>→</span></a></div>
+          <div class="hero-footnote"><span class="sparkle">✳</span><span>Biên tập cẩn thận. Giữ trọn tiếng nói của nhân vật.</span></div>
+        </div>
+        <div class="hero-art" aria-hidden="true"><div class="art-dust"></div><div class="art-ring art-ring-a"></div><div class="art-ring art-ring-b"></div><div class="art-sun"></div><div class="art-center"><span>V</span></div><div class="art-script">Beyond the <em>ordinary</em></div><div class="art-caption">A COLLECTION OF WORLDS <span>EST. 2026</span></div></div>
+      </section>
+
+      <section class="marquee" aria-label="Tôn chỉ"><div class="marquee-inner"><span>CURATED STORIES</span><b>✦</b><span>THOUGHTFUL TRANSLATION</span><b>✦</b><span>IMMERSIVE READING</span><b>✦</b><span>CURATED STORIES</span><b>✦</b><span>THOUGHTFUL TRANSLATION</span><b>✦</b><span>IMMERSIVE READING</span><b>✦</b></div></section>
+
+      <section class="catalog-section" id="library">
+        <div class="section-head"><div><p class="section-kicker">01 / YOUR NEXT ADVENTURE</p><h2>Ghé thăm <em>thư viện</em></h2><p class="section-subtitle">Chọn câu chuyện đang chờ bạn mở trang đầu tiên.</p></div><span class="catalog-count" id="bookCount">— tác phẩm</span></div>
+        <div class="catalog-toolbar">
+          <div class="catalog-tabs" role="group" aria-label="Lọc tác phẩm"><button class="tab active" data-filter="all" aria-pressed="true">Tất cả</button><button class="tab" data-filter="available" aria-pressed="false">Đọc ngay</button><button class="tab" data-filter="pending" aria-pressed="false">Sắp ra mắt</button><button class="tab" data-filter="saved" aria-pressed="false">Đã lưu ♡</button></div>
+          <label class="search-field"><span aria-hidden="true">⌕</span><input id="searchInput" type="search" placeholder="Tìm tên truyện..." autocomplete="off" aria-label="Tìm truyện"></label>
+        </div>
+        <div class="book-grid" id="bookGrid" aria-live="polite"><div class="empty-state">Đang mở thư viện...</div></div>
+      </section>
+
+      <section class="manifesto" id="about">
+        <div class="manifesto-mark">“</div><div class="manifesto-copy"><p class="section-kicker">02 / OUR PHILOSOPHY</p><h2>Bản dịch hay không chỉ là <em>đúng nghĩa.</em></h2><p>Đó còn là giọng nói quen thuộc của từng nhân vật, mối quan hệ không đổi một cách vô cớ, và câu văn tiếng Việt tự nhiên như được viết ra từ đầu. Chúng tôi xây dựng công cụ và quy trình để tôn trọng từng điều ấy.</p><a href="https://github.com/tailolicon/visunovel" rel="noopener noreferrer" target="_blank" class="text-button">Xem dự án trên GitHub <span>↗</span></a></div><div class="manifesto-ornament" aria-hidden="true"><span>V</span><small>Words<br>matter.</small></div>
+      </section>
+    </main>
+
+    <section id="bookView" class="book-view hidden" aria-live="polite" aria-label="Chi tiết tác phẩm">
+      <button id="bookBack" class="back-button">← Quay lại thư viện</button><div id="bookContent"></div>
+    </section>
+
+    <section id="readerView" class="reader-view hidden" aria-label="Đọc chương">
+      <div class="reader-progress-track"><div id="readerProgress" class="reader-progress"></div></div>
+      <div class="reader-toolbar"><button id="readerBack" class="back-button">← Mục lục</button><div class="reader-actions"><button id="fontDown" class="reader-mini" aria-label="Giảm cỡ chữ">A−</button><button id="fontUp" class="reader-mini" aria-label="Tăng cỡ chữ">A+</button><button id="readerTheme" class="reader-mini" aria-label="Đổi giao diện">◐</button></div></div>
+      <article class="reader-article"><p class="reader-kicker" id="readerMeta"></p><h1 id="readerTitle"></h1><div id="chapterBody" class="chapter-body"></div><div class="chapter-end"><span>✦</span><p>Hẹn gặp bạn ở trang tiếp theo.</p></div><div class="reader-pagination"><button id="prevChapter" class="secondary-button">← Chương trước</button><button id="nextChapter" class="primary-button">Chương tiếp →</button></div></article>
+    </section>
+
+    <footer class="footer"><div class="footer-main"><a href="#home" class="footer-brand">visu<span>novel</span><i>.</i></a><p>Mọi hành trình đều bắt đầu<br>từ một trang sách.</p></div><div class="footer-line"></div><div class="footer-bottom"><span>© 2026 visuNovel. Made for readers.</span><span>Read slowly. Feel everything. ✦</span></div></footer>
+  </div>
+  <div role="status" aria-live="polite" id="toast" class="toast"></div>
+</body>
+</html>
